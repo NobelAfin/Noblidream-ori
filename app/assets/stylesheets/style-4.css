@@ -26,7 +26,6 @@ h1 {
 }
 h2 {
 	font-size: 50px;
-	line-height: 57px;
 }
 h3 {
 	font-size: 31px;
@@ -643,7 +642,10 @@ hr {
 	background:rgba(0,66,255,0.4);
 }
 .ui-item .ui-bg-grawhi{
-    background: rgba(0, 0, 0, 0.39);
+    background: rgba(0, 0, 0, 0.54);
+}
+.ui-item .ui-bg-grawhi-strong{
+    background: rgba(0, 0, 0, 0.71);
 }
 .ui-item .ui-bg-white{
     background: rgba(228, 230, 236, 0.7);
@@ -722,6 +724,148 @@ hr {
 	text-align:center;
 }
 
+
+
+
+
+
+
+/* UI Item */
+.ui-item2{
+	position:relative;
+	overflow:hidden;
+	border-radius: 100%;
+}
+@media (max-width:767px){
+	.ui-item2{
+		max-width:400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+/* UI Content */
+.ui-item2 .ui-content{
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+/* Heading */
+.ui-item2 .ui-content h2{
+	color:#fff;
+	font-size: 26px;
+	font-weight: 400;
+	margin-top: 23px;
+}
+.ui-item2 .ui-content h6{
+	color:#fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 21px;
+}
+@media (max-width:991px) and (min-width:391px){
+	.ui-item2 .ui-content h2{	
+		margin-top:0px;
+	}
+}
+
+/* UI Background */
+.ui-item2 .ui-bg-red{
+	background:rgba(255,0,0,0.2);
+}
+.ui-item2 .ui-bg-sblue{
+	background: rgba(13, 52, 131, 0.57);
+}
+.ui-item2 .ui-bg-yellow{
+	background:rgba(252,249,3,0.4);
+}
+.ui-item2 .ui-bg-lblue{
+	background:rgba(0,255,234,0.4);
+}
+.ui-item2 .ui-bg-blue{
+	background:rgba(0,66,255,0.4);
+}
+.ui-item2 .ui-bg-grawhi{
+    background: rgba(0, 0, 0, 0.39);
+}
+.ui-item2 .ui-bg-white{
+    background: rgba(228, 230, 236, 0.7);
+}
+.ui-item2 .ui-bg-rose-pink{
+	background:rgba(0,0,255,0.4);
+}
+.ui-item2 .ui-bg-orange{
+	background:rgba(255,162,0,0.4);
+}
+.ui-item2 .ui-bg-purple{
+	background:rgba(136, 50, 162, 0.4);
+}
+.ui-item2 .ui-bg-gray{
+	background: rgba(124, 128, 152, 0.32);
+}
+/* UI Content Hover */
+.ui-item2 .ui-content .ui-content-hover{
+	position:absolute;
+	top:100%;
+	left:0px;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding:0px 20px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.ui-item2:hover .ui-content .ui-content-hover{
+	top:0px;
+}
+/* Heading */
+.ui-item2  .ui-content .ui-content-hover h2{
+	font-size:20px;
+	font-weight:400;
+	margin-top:24px;
+	line-height:30px;
+}
+@media (max-width:1200px) and (min-width:992px){
+	.ui-item2 .ui-content .ui-content-hover h2{	
+		margin-top:10px;
+	}
+}
+@media (max-width:312px){
+	.ui-item2  .ui-content .ui-content-hover h2{	
+		margin-top:16px;
+	}
+}
+.ui-item2 .ui-content .ui-content-hover h2 a{
+	color:#fff;
+}
+/* Paragraph */
+.ui-item2 .ui-content .ui-content-hover p{
+	color:#fff;
+	font-size:13px;
+	line-height:26px;
+}
+/* UI Icon */
+.ui-item2 .ui-content .ui-content-hover .ui-icon{	
+	position:absolute;
+	bottom:20px;
+	right:20px;
+}
+.ui-item2 .ui-content .ui-content-hover .ui-icon a i{
+	color:#fff;
+	font-size:22px;
+	font-weight:700;
+	width:28px;
+	height:28px;
+	border-radius:100%;
+	border:2px solid #fff;
+	line-height:24px;
+	text-align:center;
+}
+
 .fontsizing{
 	font-size: 19px;
 }
@@ -733,4 +877,8 @@ hr {
 
 .margtop-30{
 	margin-top: 30px;
+}
+
+.margtop-80{
+	margin-top: 80px !important;
 }

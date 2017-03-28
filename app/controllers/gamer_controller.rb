@@ -14,7 +14,7 @@ class GamerController < ApplicationController
   	
   end
 
-  def travel_esports
+  def travel_gamer
   	
   end
 end

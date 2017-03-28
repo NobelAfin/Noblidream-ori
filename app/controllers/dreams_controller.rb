@@ -27,10 +27,6 @@ class DreamsController < ApplicationController
   	
   end
 
-  def gasoline
-  	
-  end
-
   def new_skill
   	
   end
@@ -41,5 +37,9 @@ class DreamsController < ApplicationController
 
   def love
   	
+  end
+
+  def save_time_and_expenses
+    
   end
 end

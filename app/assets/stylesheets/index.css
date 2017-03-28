@@ -441,10 +441,59 @@ p,.jumbotron p {
 	-moz-backface-visibility:hidden;
 	backface-visibility:hidden
 }
+.bg-main-health {
+	width:100%;
+	height:100%;   
+	background:url(salud_portada3.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
 .bg-main-house {
 	width:100%;
 	height:100%;   
 	background:url(casa_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+.bg-main-coding-skill {
+	width:100%;
+	height:100%;   
+	background:url(aprender-programar_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-love {
+	width:100%;
+	height:100%;   
+	background:url(amor_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+.bg-main-friends {
+	width:100%;
+	height:100%;   
+	background:url(amistad_portada1.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -469,6 +518,19 @@ p,.jumbotron p {
 	width:100%;
 	height:100%;   
 	background:url(gamer_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-software-entrepeneur {
+	width:100%;
+	height:100%;   
+	background:url(portada_emprendimiento_software.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -528,6 +590,84 @@ p,.jumbotron p {
 	-moz-backface-visibility:hidden;
 	backface-visibility:hidden
 }
+.bg-main-fisical-health {
+	width:100%;
+	height:100%;   
+	background:url(salud-fsica-portada2.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-pre-fisical {
+	width:100%;
+	height:100%;   
+	background:url(salud-fisica-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-buy-new-car {
+	width:100%;
+	height:100%;   
+	background:url(comprar_auto_nuevo_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-combustibles {
+	width:100%;
+	height:100%;   
+	background:url(gasolina_portada1.png),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-habilidad {
+	width:100%;
+	height:100%;   
+	background:url(habilidad_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
+.bg-main-espiritualidad {
+	width:100%;
+	height:100%;   
+	background:url(espiritualidad-portada1.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+
 .page-tour2 .bg-main {
 	background:#2d3c70
 }
