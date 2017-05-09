@@ -17,7 +17,15 @@ class HealthController < ApplicationController
   def pre_fisical
     
   end
-  def better
+  def fisical_better
+    
+  end
+
+  def pre_mental
+    
+  end
+
+  def mental_better
     
   end
 end

@@ -27,7 +27,7 @@
 
   
       </a>
-      <a class="navbar-brand" href="/mx/">
+      <a class="navbar-brand" href="http://localhost:3000/">
         <span class="navbar-logo">Noblidream</span>
       </a>
     </div>
@@ -45,23 +45,18 @@
 
         <li>
     <a href="/mx/premium/?checkout=false" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium">
-      Premium
+      Sueño Nuevo
                 </a>
   </li>
 
   
-    <li>
+   <!-- <li>
     <a href="https://support.spotify.com/?utm_source=www.spotify.com&amp;utm_medium=www_header" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
       Ayuda
                 </a>
-  </li>
+  </li> -->
 
 
-      
-<li>
-  <a href="/mx/download/" id="nav-link-download" class="js-goto-signup js-get-spotify js-gtm-event" data-ga-category="menu" data-ga-action="download" data-gtm-event-name="download_spotify_button_clicked" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-navbar&quot;}">Descargar
-   </a>
-</li>
   
   <li role="separator" class="divider"></li>
 
@@ -69,7 +64,7 @@
   
       
     <li class="alternate sidepanel-item-small ">
-    <a href="/mx/signup/" id="nav-link-sign_up" data-ga-category="menu" data-ga-action="sign_up">
+    <a href="http://localhost:3000/registration/selection" id="nav-link-sign_up" data-ga-category="menu" data-ga-action="sign_up">
       Regístrate
                 </a>
   </li>
@@ -107,7 +102,7 @@
                   Sueños que cambian la vida.
       </span>
     </h1>
-    <a href="http://localhost:3000/pages/dreams" class="btn btn-solid js-goto-signup js-button-hero-get-free" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-home-hero-carousel&quot;}">
+    <a href="http://localhost:3000/pages/dreams" class="btn btn-solid3 js-goto-signup js-button-hero-get-free" data-tracking="{&quot;category&quot;: &quot;download&quot;, &quot;action&quot;: &quot;download start&quot;, &quot;label&quot;: &quot;download-home-hero-carousel&quot;}">
             ELEGIR SUEÑO
     </a>
    
@@ -134,9 +129,18 @@
         Consigue tu sueño, consigue tu vida<br>
       </span>
     </h1>
-    <a href="/mx/family/" class="btn btn-solid js-button-hero-family">
-            MÁS INFORMACIÓN
+    <span class="ui-50">
+    <a href="#" class="ui-trigger btn btn-halo js-button-hero-get-premium">
+            VER VIDEO
     </a>
+    <div class="ui-outer">
+        <a href="#" class="ui-close">x</a>
+        <!-- Content -->
+      <div>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/EUOFR7R0ric" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+   </span>
   </div>
 
                             <div style="margin-top: 60px; margin-bottom: 60px;" class="item">
@@ -145,9 +149,18 @@
                 Confia en tu pasion, logra tus sueños.
       </span>
     </h1>
-    <a href="/mx/playstation/" class="btn btn-solid js-button-hero-playstation">
-            MÁS INFORMACIÓN
+    <span class="ui-50">
+    <a href="#" class="ui-trigger btn btn-halo js-button-hero-get-premium">
+            VER VIDEO
     </a>
+    <div class="ui-outer">
+        <a href="#" class="ui-close">x</a>
+        <!-- Content -->
+      <div>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/EUOFR7R0ric" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+   </span>
   </div>
 
                       </div>
@@ -192,7 +205,7 @@
                             Sueños
             </h3>
             <p>
-                            Afin tiene cientos de sueños. Encuentra el tuyo, descubre nuevos sueños, agrega nuevos sueños, cumple las metas y hazlos realidad.
+                            Noblidream logra que el cumplir sueños sea alcanzable. Encuentra el tuyo, descubre nuevos sueños, cumple las metas y hazlos realidad.
             </p>
           </div>
           <div class="animated animatedFadeInUp">
@@ -209,7 +222,7 @@
                             Grandes sueños
             </h3>
             <p>
-                            Mas ayuda, cada dia logramos que cumplir tus sueños sea mas sencillo, incluso aquellos que son mas complicados, descubre las categorias de nuestros sueños favoritos y motivate a lograr los tuyos. 
+                            Mas ayuda, cada dia logramos que cumplir tus sueños sea mas sencillo, incluso los mas complicados, descubre las historias de algunos soñadores y motivate a lograr los tuyos. 
             </p>
           </div>
         </div>
@@ -666,41 +679,122 @@
     <div id="wrapper">
       <div id="inner" class="horizontal">
         <div id="carousel">
-          <div> 
-            <%= image_tag 't1.jpg', :class => 't1' %>
-            <%= image_tag 't2.jpg', :class => 't2' %>
-            <%= image_tag 't3.jpg', :class => 't3' %>
-            <%= image_tag 't4.jpg', :class => 't4' %>
-            <%= image_tag 't5.jpg', :class => 't5' %>
-            <%= image_tag 't6.jpg', :class => 't6' %>
-            <%= image_tag 't7.jpg', :class => 't7' %>
-            <%= image_tag 't8.jpg', :class => 't8' %>
-            <%= image_tag 't9.jpg', :class => 't9' %>
+        <div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'juegos_olimpicos_tokyo2020.jpg', :class => 't1' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'mundial_futbol_pre.jpg', :class => 't2' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'comprar_portada1.jpg', :class => 't3' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'ser_independiente_pre.jpg', :class => 't4' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'ser_un_buen_lider_pre.jpg', :class => 't5' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'encontrar_mi_mayor_pasion_pre.jpg', :class => 't6' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'habilidad_portada3.jpg', :class => 't7' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'exito_laboral.jpg', :class => 't8' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'amor_portada9.jpg', :class => 't9' %></a>
+            </div>
+
           </div>
           <div>
-           <%= image_tag 't10.jpg', :class => 't1' %>
-            <%= image_tag 't11.jpg', :class => 't2' %>
-            <%= image_tag 't12.jpg', :class => 't3' %>
-            <%= image_tag 't13.jpg', :class => 't4' %>
-            <%= image_tag 't14.jpg', :class => 't5' %>
-            <%= image_tag 't15.jpg', :class => 't6' %>
-            <%= image_tag 't16.jpg', :class => 't7' %>
-            <%= image_tag 't17.jpg', :class => 't8' %>
-            <%= image_tag 't18.jpg', :class => 't9' %>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'tiempo_portada.jpg', :class => 't1' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'superbowl.jpg', :class => 't2' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'aprender_mas_sobre_personalidad.png', :class => 't3' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'aurora_boreal_pre.jpg', :class => 't4' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'ayudar_a_alguien_que_me_necesite_pre.jpg', :class => 't5' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'ser_mejor_persona_pre.jpg', :class => 't6' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'inversionista.jpg', :class => 't7' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'ser_inventor.jpg', :class => 't8' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'visitar_otro_planeta.jpg', :class => 't9' %></a>
+            </div>
           </div>
           <div>
-          <div>
-           <%= image_tag 't19.jpg', :class => 't1' %>
-            <%= image_tag 't20.jpg', :class => 't2' %>
-            <%= image_tag 't21.jpg', :class => 't3' %>
-            <%= image_tag 't22.jpg', :class => 't4' %>
-            <%= image_tag 't23.jpg', :class => 't5' %>
-            <%= image_tag 't24.jpg', :class => 't6' %>
-            <%= image_tag 't25.jpg', :class => 't7' %>
-            <%= image_tag 't26.jpg', :class => 't8' %>
-            <%= image_tag 't27.jpg', :class => 't9' %>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'poder_volar.jpg', :class => 't1' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'viajar1.jpg', :class => 't2' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'emprendedor.jpg', :class => 't3' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'familia_casa_portada.jpg', :class => 't4' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'auto_nuevo_portada.jpg', :class => 't5' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'gaming.jpg', :class => 't6' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'felicidad_plena.jpg', :class => 't7' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'salud.jpg', :class => 't8' %></a>
+            </div>
+            <div>
+            <a href="http://localhost:3000/pages/dreams">
+                    <%= image_tag 'amistad_portada3.jpg', :class => 't9' %></a>
+            </div>
           </div>
-        </div>
+          
       </div>
       <a href="#" id="left"></a>
       <a href="#" id="right"></a>
@@ -725,7 +819,7 @@
           <!-- Tab Panes -->
           <!-- Image One -->
         <div class="tab-pane fade in active" id="img-one">
-           <%= image_tag '1.jpg', :class => 'img-responsive' %></div>
+           <%= image_tag 'viajar2_b.jpg', :class => 'img-responsive' %></div>
           <!-- Image Two -->
           <div class="tab-pane fade" id="img-two"><%= image_tag '2.jpg', :class => 'img-responsive' %></div>
           <!-- Image Three -->
@@ -751,7 +845,7 @@
         <!-- Inner -->
         <div class="ui-inner">
           <!-- Heading -->
-          <h3 class="text-klein-purple">¿Que tan bien te conoces?</h3>
+          <h3 class="text-klein-purple">¿Que tan bien conoces tus sueños?</h3>
           <!-- Nav Tabs -->
           <div class="ui-nav">
 
@@ -761,11 +855,11 @@
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
             <a href="#img-one" class="ui-item"  data-toggle="tab">
-            <%= image_tag '1-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+            <%= image_tag 'viajar1.jpg', :class => 'img-responsive ui-flip ui-front' %>
             <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
+              <span class="ui-name">Viajar por el mundo</span>
               <!-- Designation -->
-              <span class="ui-desig">Software Engineer</span>
+              <span class="ui-desig">Cumplir mi sueño</span>
               <!-- Social Media -->
               <span class="ui-social">
                 <!-- Facebook -->
@@ -1222,7 +1316,7 @@
             <!-- Item Starts -->
             <div class="ui-item">
               <!-- Company Name -->
-              <h2 class="black">Ventajas de Noblidream para tu sueño</h2>
+              <h2 class="stblue">Ventajas de Noblidream para tu sueño</h2>
 
               <!-- Report Starts -->
               <div class="ui-report">

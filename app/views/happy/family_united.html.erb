@@ -3,7 +3,7 @@
       </div>
 
 
-<div class="jumbotron bg-white-inv">
+<div class="jumbotron">
     <div class="container altura bg-white-trans">
       <div class="row">
 
@@ -18,31 +18,144 @@
 
     <div>
        <div>
-      <h3>PASO 1: SITUACION</h3>
-      <p>Contesta las siguientes preguntas.</p>
+      <h3>PASO 1: SITUACION FAMILIAR</h3>
+      <p>Selecciona la relacion o relaciones en los que haya problemas o quieras mejorar.</p>
         </div>
-<div class="ui-153">
+  <div class="ui-159">
 
-    <div class="col-md-6">
+        <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_pareja.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>EN LA PAREJA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_padres_hijos', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>ENTRE PADRES E HIJOS</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_hermanos', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>ENTRE HERMANOS</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_parejas_suegros.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>ENTRE LA PAREJA Y LOS SUEGROS</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_familia_extendida.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>CON FAMILIA EXTENDIDA</h6>
+                                <h6>(tios, primos, abuelos, etc)</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'problemas_con_familiares_que_viven_en_casa.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>CON ALGUN FAMILIAR QUE VIVA EN CASA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+              
+    </div>
+
+  <div class="ui-153">
+
+       <div class="col-md-6">
           
             <!-- Item -->
             <div class="ui-item">
               <!-- Heading -->
               <div class="ui-head">
                 <!-- Heading -->
-                <h4 class="fs-18">Cual es la razon o razones por los cuales hay problemas familiares</h4>
+                <h4 class="fs-18">1.- ¿Cual es la situacion familiar actual?.</h4>
+                <!-- Para -->
               </div>
               <!-- Body -->
+                <div class="container-fluid">
                     <div class="col-md-12 col-sm-12  col-xs-12 col-padd">
                       <!-- Body item -->
                       <div class="ui-bitem clearfix">
                         <textarea class="form-control" id="historia" name="historia"></textarea>
-                  </div>
+
+                      </div>
+                    </div>
               </div>
-             
+              <!-- Foot -->
             </div>
           
           </div>
+
           <div class="col-md-6">
           
             <!-- Item -->
@@ -50,23 +163,26 @@
               <!-- Heading -->
               <div class="ui-head">
                 <!-- Heading -->
-                <h4 class="fs-18">¿Cual es tu proposito o que esperas lograr al cumplir este sueño?</h4>
-                <p class="fs-16">Cual es tu proposito o meta.</p>
+                <h4 class="fs-18"> 2.- ¿Cual es la razon o razones que causaron la situacion actual?.</h4>
+                <!-- Para -->
               </div>
               <!-- Body -->
-                    <div class="col-md-12 col-sm-6  col-xs-6 col-padd">
+                <div class="container-fluid">
+                    <div class="col-md-12 col-sm-12  col-xs-12 col-padd">
                       <!-- Body item -->
                       <div class="ui-bitem clearfix">
                         <textarea class="form-control" id="historia" name="historia"></textarea>
-                  </div>
+
+                      </div>
+                    </div>
               </div>
-             
+              <!-- Foot -->
             </div>
           
           </div>
-            
               
     </div>
+
 
 <!-- END OF THE FIRST SECTION "PASO 1" BEGIN OF THE SECOND SECTION "PASO 2" -->
       <div>
@@ -83,10 +199,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'el-arte.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'andar_en_bicicleta_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>EL ARTE</h6>
+                                <h6>ANDAR EN BICILETA EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -101,10 +217,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'la-musica.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'bailar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>LA MUSICA</h6>
+                                <h6>BAILAR EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -119,10 +235,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'la-naturaleza.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'celebren_y_feliciten_a_sus_familiares.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>LA NATURALEZA</h6>
+                                <h6>CELEBREN Y FELICITEN A SUS FAMILIARES</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -137,10 +253,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'la-meditacion.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'cenar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>LA MEDITACION</h6>
+                                <h6>CENAR EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -155,10 +271,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'el-yoga.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'cocinar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>EL YOGA</h6>
+                                <h6>COCINAR EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -173,10 +289,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'acercarse-a-dios.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'hablar_sanamente_sin_groserias_o_vulgaridades.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>ACERCARSE A DIOS</h6>
+                                <h6>HABLAR SANAMENTE SIN GROSERIAS NI VULGARIDADES</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -191,10 +307,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'ayudar-a-los-demas.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'hacer_jardineria_o_plantar_arboles_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>AYUDAR A ALGUIEN QUE ME NECESITE</h6>
+                                <h6>HACER JARDINERIA O PLANTAR ARBOLES EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -209,10 +325,10 @@
                 <!-- Item -->
                 <div class="ui-item">
                     <!-- Image -->
-                    <%= image_tag 'gratitud.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <%= image_tag 'hacer_tarea_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
                     <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
-                                <h6>APRENDER A PRACTICAR LA GRATITUD</h6>
+                                <h6>HACER TAREA EN FAMILIA</h6>
                                 <!-- UI Content Hover -->   
                                 <div class="ui-hover">
                                 <div class="ui-links">
@@ -221,40 +337,159 @@
                                 </div>
                             </div>
                 </div>
-            </div> 
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'ir_al_parque_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>IR AL PARQUE EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'jugar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>JUGAR EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'leer_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>LEER EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'participar_en_carreras_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>PARTICIPAR EN CARRERAS EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'platicar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>PLATICAR EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'rsz_pintar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>PINTAR EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'ver_peliculas_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>VER PELICULAS EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i4">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= image_tag 'viajar_en_familia.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-grawhi">                                <!-- Heading -->
+                                <h6>VIAJAR EN FAMILIA</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                <div class="ui-links">
+                                 <i class="fa fa-check fa-3x text-white"></i>
+                             </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
        
     </div>
     </div>
 
 
     </div>
+    <p>Muy bien has terminado la seleccion. Ahora solo falta que envies tu seleccion.</p>
+    <a href="http://localhost:3000/travel/steps_travel" class="btn btn-solid js-goto-signup js-button-hero-get-free">
+            ENVIAR
+    </a>
 
 
         </div>
       </div>
 
-
-<!-- END OF THE SECTION "PASO 3" BEGIN OF THE FOURTH SECTION "PASO 4" -->
- 
-      <div>
-        <div>
-        
-          <h3>
-            PASO 3: AYUDA PARA LA FAMILIA
-          </h3>
-          <p>Estas son opciones que ayudaran a sanar el ambiente familiar de forma mas profesional, selecciona las que crees que ayudarian en tu situacion.</p>
-
-        </div>
-
-        <div>
-
-      <p>Muy bien has terminado la seleccion. Ahora solo falta que envies tu seleccion.</p>
-    <a href="http://localhost:3000/travel/steps_travel" class="btn btn-solid js-goto-signup js-button-hero-get-free">
-            ENVIAR
-    </a>
-
-    </div>
-     </div>
 
 <!-- END OF THE THIRD SECTION "PASO 3" BEGIN OF THE EXPERT TRAVELER DREAM SECTION "SELECT ALL" -->
 
@@ -296,6 +531,35 @@
         $(".ui-all .none").click(function(e){
           e.preventDefault();
           $(".ui-i4").removeClass("active");
+        });
+
+        
+      });
+
+    </script>
+    <script>
+      $(document).ready(function(){
+      
+        <!-- Select and deselect on click -->
+        $(".ui-i6 .ui-item").click(function(){
+          if($(this).parent().hasClass("active")){
+            $(this).parent().removeClass("active");
+          }
+          else{
+            $(this).parent().addClass("active");
+          }
+        });
+        
+        <!-- Select all -->
+        $(".ui-all .all").click(function(e){
+          e.preventDefault();
+          $(".ui-i6").removeClass("active").addClass("active");
+        });
+        
+        <!-- Select none -->
+        $(".ui-all .none").click(function(e){
+          e.preventDefault();
+          $(".ui-i6").removeClass("active");
         });
 
         

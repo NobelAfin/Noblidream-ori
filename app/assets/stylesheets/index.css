@@ -332,6 +332,76 @@ p,.jumbotron p {
 	-webkit-box-shadow:none;
 	box-shadow:none
 }
+
+.btn-solid2 {
+	color:#FFF !important;
+	background-color: rgba(18, 6, 3, 0.92);
+}
+.btn-solid2:hover {
+	color:#FFF;
+	background-color: rgba(10, 10, 11, 0.77);
+}
+
+
+
+
+.btn-solid3 {
+	color:#FFF;
+	background-color: rgb(255, 255, 255);
+}
+.btn-solid3:hover {
+	color:#FFF;
+	background-color: rgba(31, 50, 71, 0.58);
+}
+.btn-solid3:focus {
+	color:#FFF;
+	background-color:#185dd5;
+	-webkit-box-shadow:0 0 0 2px rgba(255,255,255,0.7) inset;
+	box-shadow:0 0 0 2px rgba(255,255,255,0.7) inset
+}
+.btn-solid3:active,.btn-solid3.active,.open>.dropdown-toggle.btn-solid3 {
+	background-color:#5706ca;
+	-webkit-box-shadow:none;
+	box-shadow:none
+}
+.page-tour2 .btn-solid3 {
+	color:#1e3264;
+	background-color:#FFF
+}
+.page-tour2 .btn-solid3:hover {
+	color:#1e3264;
+	background-color:#e6e6e6
+}
+.page-tour2 .btn-solid3:focus {
+	color:#1e3264;
+	background-color:#FFF;
+	-webkit-box-shadow:0 0 0 2px rgba(255,255,255,0.7) inset;
+	box-shadow:0 0 0 2px rgba(255,255,255,0.7) inset
+}
+.page-tour2 .btn-solid3:active,.page-tour2 .btn-solid3.active,.open>.dropdown-toggle.page-tour2 .btn-solid3 {
+	background-color:#d9d9d9;
+	-webkit-box-shadow:none;
+	box-shadow:none
+}
+
+.btn-solid4 {
+	color:#FFF !important;
+	background-color: rgba(18, 6, 3, 0.92);
+}
+
+
+.btn-solid5 {
+	color:#FFF !important;
+	background-color: rgba(73, 73, 86, 0.5);
+}
+.btn-solid5:hover {
+	color:#FFF;
+	background-color: rgba(31, 50, 71, 0.58);
+}
+
+
+
+
 .btn-halo {
 	padding:9px 47px 7px
 }
@@ -409,6 +479,18 @@ p,.jumbotron p {
 	width:100%;
 	height:100%;   
 	background:url(../i/home/noise.png),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	left:0;
+	position:fixed;
+	top:0;
+	z-index:-1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+.bg-main-registration {
+	width:100%;
+	height:100%;   
+	background:url(../i/home/noise.png),linear-gradient(50deg,#f9f9f9 0,#3eaef6 100%);
 	left:0;
 	position:fixed;
 	top:0;

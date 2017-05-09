@@ -38,6 +38,10 @@
         height: 120px;
         position: absolute;
       }
+      img.aprender_mas_sobre_personalidad {
+        left: 10px;
+        top: 10px;
+      }
       img.t1 {
         left: 10px;
         top: 10px;

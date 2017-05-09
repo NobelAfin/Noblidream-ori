@@ -28,7 +28,7 @@ margin:60px auto;
 	border-radius:5px;
 	box-shadow:3px 3px 0px 1px rgba(0,0,0,0.04);
 	padding:5px 0px;
-	background: #F2F6FFE6;
+	background: white;
 	border-radius: 8%;
 }
 @media(max-width:480px) {

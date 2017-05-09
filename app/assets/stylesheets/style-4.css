@@ -135,6 +135,9 @@ hr {
 .blue {
   color: #609cec !important;
 }
+.stblue {
+  color: #07478f !important;
+}
 .orange {
   color: #f78153 !important;
 }
@@ -154,6 +157,9 @@ hr {
   color: #185dd5 !important;
 }
 /* Background color classes */
+.bg-slblue-trans {
+  background-color: #2c68bab3 !important;
+}
 .bg-bluetravel {
   background-color: #d6edfee6 !important;
 }
@@ -161,7 +167,7 @@ hr {
 	background-color: #d6e2ffe6 !important;
 }
 .bg-white-trans {
-  background-color: #ffffffe6 !important;
+    background-color: rgba(255, 255, 255, 0.96) !important;
 }
 .bg-white-inv {
 	background-color: #fefefe66 !important;
@@ -881,4 +887,24 @@ hr {
 
 .margtop-80{
 	margin-top: 80px !important;
+}
+
+.margbot-50{
+	margin-bottom: 50px !important;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.f-left{
+	float: left;
+}
+
+.f-right{
+	float: right;
 }

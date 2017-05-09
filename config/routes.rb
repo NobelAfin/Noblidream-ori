@@ -1,16 +1,37 @@
 Rails.application.routes.draw do
-  get 'america/costa_rica'
+
+  get 'dreams_in_process/olympic_games'
+
+  get 'registration/introduction'
+  get 'registration/selection'
+  get 'registration/quick_registration'
+  get 'registration/part_1a'
+  get 'registration/part_1b'
+  get 'registration/part_2a'
+  get 'registration/part_2b'
 
   get 'buy_dream/electronic'
 
   get 'new_skill/coding'
+  get 'new_skill/cook'
+  get 'new_skill/new_language'
+  get 'new_skill/design'
+  get 'new_skill/robotics'
+  get 'new_skill/freelancer'
 
   get 'profile/overview'
 
   get 'save_time_and_expenses/save_the_time_in_the_market'
   get 'save_time_and_expenses/gasoline'
+  get 'save_time_and_expenses/taking_care'
+  get 'save_time_and_expenses/buy_from_productor'
+  get 'save_time_and_expenses/laundry'
+  get 'save_time_and_expenses/delivery_to_work'
+  get 'save_time_and_expenses/pet_care'
+  get 'save_time_and_expenses/clean_house'
 
   get 'friends/new_best_friends'
+  get 'friends/bad_companies'
 
   get 'love/men'
 
@@ -19,7 +40,9 @@ Rails.application.routes.draw do
   get 'health/mental'
   get 'health/emocional'
   get 'health/pre_fisical'
-  get 'health/better'
+  get 'health/fisical_better'
+  get 'health/pre_mental'
+  get 'health/mental_better'
 
   get 'happy/espiritual'
   get 'happy/family_united'
