@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'registration/part_2a'
   get 'registration/part_2b'
 
-  get 'buy_dream/electronic'
+  get 'buy_dream/electronic', to: "buy_dream#electronic"
 
   get 'new_skill/coding'
   get 'new_skill/cook'
