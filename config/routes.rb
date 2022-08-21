@@ -106,7 +106,7 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'pages/prueba'
   get 'pages/access'
-  get 'pages/dreams'
+  get 'pages/dreams', to: "pages#dreams"
   get 'pages/add_dream'
 
 
