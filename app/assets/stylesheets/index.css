@@ -178,8 +178,8 @@
 	-webkit-transform:rotate(30deg) translate3d(0,40px,0)
 }
 /*.animatedFadeInUp {
-	opacity:0 */
-}
+	opacity:0 
+} */
 [class*='animated-delay'] {
 	animation-duration:.8s;
 	-webkit-animation-duration:.8s
@@ -445,7 +445,7 @@ p,.jumbotron p {
 	.page-tour2 .jumbotron-albums {
 		background:#2d3c70
 	}
-}
+
 @media(min-width:768px) {
 	.jumbotron-albums {
 		background:0
@@ -980,8 +980,8 @@ p,.jumbotron p {
 	background:url(android_white.png) no-repeat;
 	background-size:cover;
 	padding:40px 11px 0;
-	margin-bottom:15px */
-}
+	margin-bottom:15px 
+} */
 @media(min-width:768px) {
 	.iphone {
 		width: 358px;
@@ -999,8 +999,8 @@ p,.jumbotron p {
 	background:url(windowscell.png) no-repeat;
 	background-size:cover;
 	padding:30px 12px 0 9px;
-	margin-bottom:-50% */
-}
+	margin-bottom:-50% 
+} */
 @media(min-width:768px) {
 	.nexus {
 		width: 363px;
@@ -1094,7 +1094,7 @@ p,.jumbotron p {
 .jumbotron-subscriptions .price span {
 	font-size:20px
 }
-.jumbotron-subscriptions .details-subscriptions {s
+.jumbotron-subscriptions .details-subscriptions {
 	border-left:0;
 	border-right:0;
 	padding:1em 0;
