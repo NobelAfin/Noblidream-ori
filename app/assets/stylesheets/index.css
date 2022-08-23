@@ -423,6 +423,15 @@ p,.jumbotron p {
 		padding-top:84px
 	}
 }
+@media(min-width:768px) {
+	.navbar-semi-transparent {
+		background-color:rgba(0,0,0,0.6)
+	}
+	.navbar-semi-transparent.navbar-static-top+.jumbotron {
+		margin-top:-54px;
+		padding-top:84px
+	}
+}
 .wrap {
 	overflow:hidden
 }
