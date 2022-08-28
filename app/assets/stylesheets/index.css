@@ -346,7 +346,7 @@ p,.jumbotron p {
 
 
 .btn-solid3 {
-	color:rgb(0 0 0 / 75%);
+	color:rgb(0, 0, 0, 0.75);
 	background-color: rgb(255, 255, 255);
 }
 .btn-solid3:hover {

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'new_skill/freelancer'
 
   get 'profile/overview'
+  get 'profile/sign_in'
 
   get 'save_time_and_expenses/save_the_time_in_the_market'
   get 'save_time_and_expenses/gasoline'
