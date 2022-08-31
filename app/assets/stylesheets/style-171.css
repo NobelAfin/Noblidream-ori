@@ -12,7 +12,7 @@ body{
 .ui-171 .ui-outers{
 	max-width:100%;
 	margin:0px auto;
-	border:2px solid #fff;
+	border:2px solid #efefefc2;
 	box-shadow: 0px 0px 15px rgba(48, 91, 194, 0.78);
 	position:relative;
 	overflow:hidden;
@@ -61,7 +61,7 @@ body{
 }
 /* Nav Tabs */
 .ui-171 .ui-outers .ui-inner .ui-nav{
-	margin:15px 0px 8px;
+	margin:-80px 0px 8px;
 	width:100%;
 }
 /* Carousel Image */
