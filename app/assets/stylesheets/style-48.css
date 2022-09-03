@@ -44,7 +44,7 @@ margin:60px auto;
 }
 /* Report */
 .ui-48 .ui-item .ui-report .r-item{
-	padding:12px 10px;
+	padding:-1px 10px;
 	border-top: 1px solid #eee;
 	background: #037aff00;
 }
@@ -70,8 +70,9 @@ margin:60px auto;
 }
 /* Heading */
 .ui-48 .ui-item .ui-report .r-item h4{
-	font-size:21px;
-	line-height:28px;
+	font-weight: 200;
+	font-size:15px;
+	line-height:22px;
 	text-transform:uppercase;
 	color: #171717;
 }
@@ -93,7 +94,7 @@ margin:60px auto;
 /* Heading */ 
 .ui-48 .ui-item .ui-contact h4{
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:15px;
 	line-height:22px;
 	margin-bottom:10px;
 	padding-bottom:5px;
