@@ -6,11 +6,22 @@
 
 
 <div class="jumbotron jumbotron-albums jumbotron-subscriptions">
-<div class="jumbotron-bg lazy lazy-no-small" style="background: url(../i/home/noise.png),linear-gradient(50deg,#38adf8 0,#180d7e 100%);" data-original=""></div>
+<div class="jumbotron-bg lazy lazy-no-small" style="background-image: url(),linear-gradient(50deg,#38adf8 0,#180d7e 100%);" data-original=""></div>
   <div class="container">
    <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-10 col-lg-12">
+<!--<div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="sidepanel" data-target="#navbar-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <%= link_to "Noblidream", pages_index_path, class: "navbar-logo navbar-brand"%>
+    </div>-->
               <div class="animated animatedFadeInUp">
                 <h1>
                   <span class="text-white">
@@ -56,12 +67,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/travel">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_travel_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/travel"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_travel_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -83,12 +96,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/my_own_business">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_my_own_business_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/my_own_business"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_my_own_business_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -107,12 +122,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/new_house">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_new_house_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/new_house"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_new_house_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -131,12 +148,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/new_car">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_new_car_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/new_car"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_new_car_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -155,12 +174,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/gamer">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_gamer_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/gamer"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_gamer_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -179,12 +200,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/happy">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_happy_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/happy"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_happy_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -203,12 +226,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/healthy">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_healthy_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/healthy"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_healthy_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -227,12 +252,14 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><a href="http://localhost:3000/dreams/friends">DA CLICK</a></h3>
+                  <h3><%= link_to "DA CLICK", dreams_friends_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <a href="http://localhost:3000/dreams/friends"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                  <%= link_to dreams_friends_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
@@ -712,7 +739,7 @@
                 </div>
             </div> 
             <div class="margtop-30">
-              <p class="black fs-24">Tienes un sueño que no encuentras aqui o algun sueño especial. Agregalo abajo.</p>    <a href="http://localhost:3000/pages/add_dream" class="btn btn-solid js-goto-signup js-button-hero-get-free">
+              <p class="black fs-24">Tienes un sueño que no encuentras aqui o algun sueño especial. Agregalo abajo.</p>    <a href="http://localhost:3000/pages/add_dream" class="btn btn-solid2 js-goto-signup js-button-hero-get-free">
                 AGREGAR SUEÑO
               </a>
             </div>

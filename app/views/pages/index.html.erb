@@ -11,29 +11,14 @@
     <div class="container">
     <div class="navbar-header">
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="sidepanel" data-target="#navbar-nav">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="sidepanel" data-target="#navbar-nav">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-      
-            <a href="https://www.spotify.com/login?continue=https%3A%2F%2Fwww.spotify.com%2Fmx%2Faccount%2Foverview%2F" class="user-link hidden ">
-          
-    <div class="user-icon-container img-circle navbar-user-img">
-      <svg class="user-icon">
-        <use xlink:href="#user-icon">
-      </use></svg>
-    </div>
-
-
-      </a>
 
       <%= link_to "Noblidream", pages_index_path, class: "navbar-logo navbar-brand"%>
-
-      <!--<a class="navbar-brand" href="http://localhost:3000/">
-        <span class="navbar-logo">Noblidream</span>
-      </a>-->
     </div>
           <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
         
@@ -1451,9 +1436,7 @@
                 </div>  
               </div> -->
               <div class="ui-social text-center">
-               <a href="http://localhost:3000/pages/dreams" class="btn btn-solid5 js-button-module-get-premium">
-                                    ELEGIR SUEÑO
-                </a>
+              <%= link_to "ELEGIR SUEÑO", pages_dreams_path, class: "btn btn-solid5 js-goto-signup js-button-hero-get-free" %>
               </div>
               <!-- Social Icon Ends -->
             </div>

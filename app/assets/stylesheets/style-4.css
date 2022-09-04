@@ -73,6 +73,9 @@ hr {
 .espacio{
 	margin-top: 5em;
 }
+.f-bold{
+	font-weight: bold !important;
+}
 .dreamfs{
 	font-size: 21px !important;
 }

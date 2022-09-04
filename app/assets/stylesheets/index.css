@@ -1131,8 +1131,8 @@ p,.jumbotron p {
 	color:#42e3c6
 }
 .jumbotron-subscriptions .btn {
-	margin-top:30px;
-	margin-bottom:70px
+	margin-top:10px;
+	margin-bottom:15px;
 }
 @media(max-width:991px) {
 	.jumbotron-subscriptions .btn {
