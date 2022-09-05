@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   get 'dreams_in_process/olympic_games'
+  get 'dreams_in_process/professional_athlete'
+  get 'dreams_in_process/buy_dream'
 
   get 'registration/introduction'
   get 'registration/selection'
