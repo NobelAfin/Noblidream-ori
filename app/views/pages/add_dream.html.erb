@@ -28,9 +28,6 @@
 
   <li>
   <%= link_to "Sueño Nuevo", pages_add_dream_path %>
-  <!--<a href="/mx/premium/?checkout=false" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium">
-      Sueño Nuevo
-    </a>-->
   </li>
 
    <!-- <li>
@@ -43,9 +40,6 @@
     
     <li class="alternate sidepanel-item-small ">
     <%= link_to "Regístrate", registration_introduction_path %>
-    <!--<a href="http://localhost:3000/registration/selection" id="nav-link-sign_up" data-ga-category="menu" data-ga-action="sign_up">
-      Regístrate
-                </a>-->
     </li>
 
    <li class="alternate sidepanel-item-small">
@@ -74,19 +68,19 @@
                     <label class="col-md-4 control-label text-white" for="proyecto">Nombre del sueño que deseas registrar</label>
                     <div class="col-md-8">
                         <input id="proyecto" name="proyecto" class="form-control input-md" required="" aria-required="true" type="text">
-                        <span class="help-block"></span>
+                        <span class="help-block text-white">Como nombrarias a tu sueño</span>
                     </div>                  
                     
                     <label class="col-md-4 control-label text-white" for="correo">Correo electronico al que deseas que nos comuniquemos </label>
                     <div class="col-md-8">
                         <input id="correo" name="correo" class="form-control input-md" required="" aria-required="true" type="text">
-                        <span class="help-block text-white">Este será el principal medio de comunicación.</span>
+                        <span class="help-block text-white"></span>
                     </div>
                     
-                    <label class="col-md-4 control-label text-white" for="telefono">Telefono donde te podemos encontrar </label>
+                    <label class="col-md-4 control-label text-white" for="telefono">Telefono donde te podemos encontrar y escribir</label>
                     <div class="col-md-8">
                         <input id="telefono" name="telefono" class="form-control input-md" required="" aria-required="true" type="text">
-                        <span class="help-block"></span>
+                        <span class="help-block text-white">Este será el principal medio de comunicación.</span>
                     </div>
                     
                     <label class="col-md-4 control-label text-white fs-16" for="historia">Cuenta la historia de por que deseas que este sueño se haga realidad</label>
@@ -97,9 +91,10 @@
                     
                     <!-- Select Basic -->
                     <div class="form-group">
-                      <label class="col-md-4 control-label text-white fs-16 f-bold" for="sector">¿A qué sector, industria o are de la vida pertenece tu sueño?</label>
+                      <label class="col-md-4 control-label text-white fs-16" for="sector">¿A qué sector, industria o area de la vida pertenece tu sueño?</label>
                       <div class="col-md-8">
                         <textarea class="form-control" id="historia" name="historia"></textarea>
+                        <span class="help-block text-white">Nos ayudara a entender y encontrar la mejor solucion para cumplir tu sueño.</span>
                       </div>
                     </div>
                     
@@ -118,17 +113,18 @@
                     <label class="col-md-4 control-label text-white" for="solucion">¿Cómo se resuelve actualmente el sueño completo o partes del sueño?</label>
                     <div class="col-md-8">
                         <textarea class="form-control" id="solucion" name="solucion"></textarea>
-                        <span class="help-block">Puede que para tu sueño no exista una solucion completa hoy dia, pero tal vez si parciales. Si las conoces apuntalas.</span>
+                        <span class="help-block text-white">Puede que para tu sueño no exista una solucion completa hoy dia, pero tal vez si parciales. Si las conoces apuntalas.</span>
                     </div>                                                       
-                    <label class="col-md-4 control-label" for="motivacion">Explíquenos tu motivación para llevar a cabo este sueño</label>
+                    <label class="col-md-4 control-label text-white" for="motivacion">Explíquenos tu motivación para llevar a cabo este sueño</label>
                     <div class="col-md-8">
                         <textarea class="form-control" id="motivacion" name="motivacion"></textarea>
-                        <span class="help-block">¿Por qué hacer esto y no otra cosa?</span>
+                        <span class="help-block text-white">¿Por qué hacer esto y no otra cosa?</span>
                     </div>
                     
-                    <label class="col-md-4 control-label" for="tiempo">¿Cuanto tiempo, dinero y esfuerzo estas dispuesto a meterle a tu sueño? </label>
+                    <label class="col-md-4 control-label text-white" for="tiempo">¿Cuanto tiempo, dinero y esfuerzo estas dispuesto a meterle a tu sueño? </label>
                     <div class="col-md-8">
                         <textarea class="form-control" id="tiempo" name="tiempo"></textarea>
+                        <span class="help-block text-white">Nos ayudara a entender mas sobre tus requerimentos para cumplir tu sueño</span>
                     </div>
                     
                 </fieldset>                
@@ -139,7 +135,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="singlebutton"></label>
                   <div class="col-md-8">
-                    <button id="singlebutton" name="singlebutton" class="btn btn-info">Enviar Sueño</button>
+                    <button id="singlebutton" name="singlebutton" class="navbar-btn btn btn-solid3">Enviar Sueño</button>
                   </div>
                 </div>
                 
