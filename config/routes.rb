@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'dreams_in_process/become_inventor'
   get 'dreams_in_process/another_planet'
   get 'dreams_in_process/fly'
+  get 'dreams_in_process/young_and_retired'
 
   get 'registration/introduction'
   get 'registration/selection'

@@ -39,4 +39,6 @@ class DreamsInProcessController < ApplicationController
   end
   def fly
   end
+  def young_and_retired
+  end
 end
