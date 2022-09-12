@@ -14,7 +14,6 @@ gem 'uglifier'
 gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -25,8 +24,6 @@ gem 'jbuilder'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'psych', '< 4'
-gem 'webpacker', '~> 4.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,3 +43,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Upgrate of gems from course ruby on rails 6 mvp 2022
+
+# instead of html, haml unique sintaxys
+gem "haml-rails", "~> 2.0"
+# instead of sprockets webpacker, is the upgrade but i could not make it work
+gem 'psych', '< 4'
+gem 'webpacker', '~> 4.0'
+# better way to work with forms
+gem 'simple_form'
