@@ -243,7 +243,7 @@ DEPENDENCIES
   pg
   psych (< 4)
   puma
-  rails (~> 7.0.3)
+  rails (~> 7.0.3, >= 7.0.3.1)
   sass-rails
   simple_form
   spring
