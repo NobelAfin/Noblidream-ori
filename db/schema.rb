@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_02_004120) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_02_221311) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "usuarios", force: :cascade do |t|
+    t.string "nombre"
+    t.string "apellido_paterno"
+    t.string "apellido_materno"
+    t.string "fecha_de_nacimiento"
+    t.string "telefono"
+    t.string "estado_civil"
+    t.string "sexo"
+    t.string "escolaridad"
+    t.string "estado"
+    t.string "municipio"
+    t.string "domicilio"
+    t.string "numero_exterior"
+    t.string "numero_interior"
+    t.string "codigo_postal"
+    t.string "correo"
+    t.string "confirmar_correo"
+    t.string "contraseña"
+    t.string "confirmar_contraseña"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
