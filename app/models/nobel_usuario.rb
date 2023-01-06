@@ -1,2 +1,0 @@
-class NobelUsuario < ApplicationRecord
-end
