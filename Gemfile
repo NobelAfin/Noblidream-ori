@@ -51,6 +51,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails", "~> 2.0"
 # instead of sprockets webpacker, is the upgrade but i could not make it work
 gem 'psych', '< 4'
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.0'
 # better way to work with forms
 gem 'simple_form'
