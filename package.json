@@ -16,7 +16,5 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "start": "webpack-dev-server --progress --colors",
-    "start1": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-   "build1": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
   }
 }
