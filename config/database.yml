@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: Noblidream-ori_production
   username: Noblidream-ori
   password: <%= ENV['NOBLIDREAM-ORI_DATABASE_PASSWORD'] %>

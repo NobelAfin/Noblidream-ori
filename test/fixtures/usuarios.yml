@@ -4,38 +4,38 @@ one:
   nombre: MyString
   apellido_paterno: MyString
   apellido_materno: MyString
-  fecha_de_nacimiento: MyString
-  telefono: MyString
+  fecha_de_nacimiento: 
+  telefono: 
   estado_civil: MyString
   sexo: MyString
   escolaridad: MyString
   estado: MyString
   municipio: MyString
-  domicilio: MyString
-  numero_exterior: MyString
-  numero_interior: MyString
-  codigo_postal: MyString
-  correo: MyString
-  confirmar_correo: MyString
-  contraseña: MyString
-  confirmar_contraseña: MyString
+  domicilio: 
+  numero_exterior: 
+  numero_interior: 
+  codigo_postal: 
+  correo: 
+  confirmar_correo: 
+  contraseña: 
+  confirmar_contraseña: 
 
 two:
   nombre: MyString
   apellido_paterno: MyString
   apellido_materno: MyString
-  fecha_de_nacimiento: MyString
-  telefono: MyString
+  fecha_de_nacimiento: 
+  telefono: 
   estado_civil: MyString
   sexo: MyString
   escolaridad: MyString
   estado: MyString
   municipio: MyString
-  domicilio: MyString
-  numero_exterior: MyString
-  numero_interior: MyString
-  codigo_postal: MyString
-  correo: MyString
-  confirmar_correo: MyString
-  contraseña: MyString
-  confirmar_contraseña: MyString
+  domicilio: 
+  numero_exterior: 
+  numero_interior: 
+  codigo_postal: 
+  correo: 
+  confirmar_correo: 
+  contraseña: 
+  confirmar_contraseña: 

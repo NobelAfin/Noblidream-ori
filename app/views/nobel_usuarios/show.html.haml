@@ -1,0 +1,60 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @nobel_usuario.nombre
+%p
+  %b Apellido paterno:
+  = @nobel_usuario.apellido_paterno
+%p
+  %b Apellido materno:
+  = @nobel_usuario.apellido_materno
+%p
+  %b Fecha de nacimiento:
+  = @nobel_usuario.fecha_de_nacimiento
+%p
+  %b Telefono:
+  = @nobel_usuario.telefono
+%p
+  %b Estado civil:
+  = @nobel_usuario.estado_civil
+%p
+  %b Sexo:
+  = @nobel_usuario.sexo
+%p
+  %b Escolaridad:
+  = @nobel_usuario.escolaridad
+%p
+  %b Estado:
+  = @nobel_usuario.estado
+%p
+  %b Municipio:
+  = @nobel_usuario.municipio
+%p
+  %b Domicilio:
+  = @nobel_usuario.domicilio
+%p
+  %b Numero exterior:
+  = @nobel_usuario.numero_exterior
+%p
+  %b Numero interior:
+  = @nobel_usuario.numero_interior
+%p
+  %b Codigo postal:
+  = @nobel_usuario.codigo_postal
+%p
+  %b Correo:
+  = @nobel_usuario.correo
+%p
+  %b Confirmar correo:
+  = @nobel_usuario.confirmar_correo
+%p
+  %b Contraseña:
+  = @nobel_usuario.contraseña
+%p
+  %b Confirmar contraseña:
+  = @nobel_usuario.confirmar_contraseña
+
+= link_to 'Edit', edit_nobel_usuario_path(@nobel_usuario)
+\|
+= link_to 'Back', nobel_usuarios_path

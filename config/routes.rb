@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nobel_usuarios
   resources :usuarios
 
   get 'dreams_in_process/olympic_games'
