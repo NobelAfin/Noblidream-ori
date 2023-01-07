@@ -19,5 +19,6 @@ const customConfig = {
   environment.config.delete('node.child_process')
   
   environment.config.merge(customConfig);
+  
 
 module.exports = environment
