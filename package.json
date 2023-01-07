@@ -1,8 +1,11 @@
 {
-  "name": "Noblidream-ori",
+  "name": "noblidream-ori",
   "version": "1.22.19",
   "main": "index.js",
-  "repository": "git@github.com:NobelAfin/Noblidream-ori.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NobelAfin/Noblidream-ori.git"
+  },
   "author": "NobelArmy <nobelarmy@outlook.com>",
   "license": "MIT",
   "dependencies": {
@@ -16,5 +19,14 @@
   "scripts": {
     "build": "webpack --progress --colors",
     "start": "react-scripts --openssl-legacy-provider start"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "bugs": {
+    "url": "https://github.com/NobelAfin/Noblidream-ori/issues"
+  },
+  "homepage": "https://github.com/NobelAfin/Noblidream-ori#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
