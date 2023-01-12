@@ -1,7 +1,7 @@
 {
   "name": "noblidream-ori",
   "version": "1.22.19",
-  "main": "index.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/NobelAfin/Noblidream-ori.git"
@@ -10,14 +10,16 @@
   "license": "MIT",
   "dependencies": {
     "@rails/webpacker": "5.4.3",
-    "webpack": "^5.75.0"
+    "file-loader": "^6.2.0"
   },
   "devDependencies": {
+    "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4"
   },
   "scripts": {
-    "build": "webpack --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress",
     "start": "react-scripts --openssl-legacy-provider start"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
@@ -28,5 +30,6 @@
   "directories": {
     "lib": "lib",
     "test": "test"
-  }
+  },
+  "keywords": []
 }
