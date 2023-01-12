@@ -4477,7 +4477,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
+    float: none;
   }
   .col-md-12 {
     width: 100%;
@@ -9462,11 +9462,6 @@ button.close {
         width: 100px;
       }
 
-      @media(min-width:768px) {
-        #wrapper {
-          margin-left: 50%;
-        }
-      }
 /* - This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this file,
    - You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -15808,7 +15803,7 @@ pre code {
 }
 @media(min-width:992px) {
 	.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
-		float:left
+		float:none
 	}
 	.col-md-12 {
 		width:100%

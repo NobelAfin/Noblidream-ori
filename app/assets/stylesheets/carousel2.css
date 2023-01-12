@@ -165,9 +165,3 @@
       #donate form {
         width: 100px;
       }
-
-      @media(min-width:768px) {
-        #wrapper {
-          margin-left: 50%;
-        }
-      }
