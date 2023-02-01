@@ -14,7 +14,7 @@
  *= require_self
  */
 
-@import "variables";
+
 @import "primitives";
 @import "header";
 @import "footer";
