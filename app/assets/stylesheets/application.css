@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+ @media(min-width:768px) {
+    #wrapper {
+      margin-left: 1%;
+    }
+  }
