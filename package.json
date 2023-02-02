@@ -1,6 +1,6 @@
 {
-  "name": "noblidream-ori",
-  "version": "1.22.19",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -10,19 +10,31 @@
   "license": "MIT",
   "dependencies": {
     "@rails/webpacker": "5.4.3",
+    "cors-anywhere": "^0.4.4",
     "file-loader": "^6.2.0"
   },
   "devDependencies": {
+    "@webpack-cli/generators": "^3.0.1",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "prettier": "^2.8.3",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4"
+    "webpack-dev-server": "^4.11.1",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress",
-    "start": "react-scripts --openssl-legacy-provider start"
+    "build": "webpack --mode=production --node-env=production",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
-  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "My webpack project",
   "bugs": {
     "url": "https://github.com/NobelAfin/Noblidream-ori/issues"
   },
@@ -31,5 +43,6 @@
     "lib": "lib",
     "test": "test"
   },
-  "keywords": []
+  "keywords": [],
+  "main": "babel.config.js"
 }
