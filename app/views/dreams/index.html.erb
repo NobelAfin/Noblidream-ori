@@ -1,0 +1,878 @@
+<script src="https://kit.fontawesome.com/916442ede6.js" crossorigin="anonymous"></script>
+  <div class="bg-main">
+  <!--
+          <div style="display: block; background-image: url(&quot;//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png&quot;);" class="bg-main-img lazy lazy-no-small" data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div> -->
+      </div>
+      <header id="js-navbar" class="navbar navbar-default navbar-fixed-top navbar-semi-transparent navbar-highlight-aquamarine" role="banner">
+      <div class="container">
+      <div class="navbar-header">
+  
+          <button type="button" class="navbar-toggle collapsed" data-toggle="sidepanel" data-target="#navbar-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+  
+        <%= link_to "Noblidream", pages_index_path, class: "navbar-logo navbar-brand"%>
+      </div>
+            <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
+          
+  <ul class="nav navbar-nav navbar-right nav-main">
+  
+      
+      <li class="hidden ">
+      <a href="/mx/explore/" id="nav-link-Explore" data-ga-category="menu" data-ga-action="Explore">
+        Explore
+                  </a>
+    </li>
+  
+  
+    <li>
+    <%= link_to "Sueño Nuevo", pages_add_dream_path %>
+    <!--<a href="/mx/premium/?checkout=false" id="nav-link-premium" data-ga-category="menu" data-ga-action="premium">
+        Sueño Nuevo
+      </a>-->
+    </li>
+  
+    
+     <!-- <li>
+      <a href="" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
+        Ayuda
+                  </a>
+    </li> -->
+  
+  
+    
+    <li role="separator" class="divider"></li>
+  
+    
+    
+        
+      <li class="alternate sidepanel-item-small ">
+      <%= link_to "Regístrate", registration_introduction_path %>
+      <!--<a href="http://localhost:3000/registration/selection" id="nav-link-sign_up" data-ga-category="menu" data-ga-action="sign_up">
+        Regístrate
+                  </a>-->
+    </li>
+  
+    <li class="alternate sidepanel-item-small">
+    <%= link_to "Inicio de sesión", profile_overview_path, class: "user-link user-text navbar-user-text" %>
+    </li>
+    </ul>
+        </nav>
+        </div>
+  </header>
+
+<div class="jumbotron jumbotron-albums jumbotron-subscriptions">
+<div class="jumbotron-bg lazy lazy-no-small" style="background-image: url(),linear-gradient(50deg,#38adf8 0,#180d7e 100%);" data-original=""></div>
+  <div class="container">
+   <div class="col-sm-12">
+          <div class="row">
+<!--<div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="sidepanel" data-target="#navbar-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <%= link_to "Noblidream", pages_index_path, class: "navbar-logo navbar-brand"%>
+    </div>-->
+              <div class="animated animatedFadeInUp">
+                <h1>
+                  <span class="text-white">
+                      Todo esta a tu alcance
+                  </span>
+                </h1>
+              </div>
+              <div class="animated animatedFadeInUp">
+                <p class="text-white">
+            Noblidream es nuestra aportación para ayudar a la humanidad a que llegue a ser algo de lo que todos estemos orgullosos de ser parte, con la esperanza de seguir moviendo a todos hacia nuestro mejor futuro. Podras cumplir cualquier cosa que hayas pensado alguna vez e incluso mejoraras tus actividades diarias.
+            Gracias por confiar en nosotros y a continuacion te presentamos el principio de nuestra vision. 
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- UI - X Starts -->
+    <div class="ui-145">
+      <div class="container">
+        <div class="row">
+
+       <!-- <%  @dreams.each do |dream| %>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <div class="ui-item">
+               <%= image_tag 'viajar1.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white"><%= dream.name %></h5>
+              <div class="ui-image-hover">
+                <div class="ui-name" style="margin-top: 35%">
+                  <h3><%= link_to "DA CLICK", dreams_travel_path%></h3>
+                </div>
+                <div class="ui-social">
+                  <%= link_to dreams_travel_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+        <% end %> -->
+        
+        <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'viajar1.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Viajar por el mundo</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_travel_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_travel_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+
+         <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'emprendedor.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Mi propio negocio</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_my_own_business_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_my_own_business_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'familia_casa_portada.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Tener una casa nueva</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_new_house_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_new_house_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'auto_nuevo_portada.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Tener un vehiculo nuevo</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_new_car_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_new_car_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'gaming.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Siendo Gamer</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_gamer_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_gamer_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'felicidad_plena.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Ser mas feliz</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_happy_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_happy_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'salud.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Tener una buena salud</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_healthy_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_healthy_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag 'amistad_portada3.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Tener nuevos amigos</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", dreams_friends_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to dreams_friends_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 col-mob">
+            <!-- Item -->
+            <div class="ui-item">
+              <!-- Image -->
+               <%= image_tag '2-small.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Sueño especial</h5>
+              <!-- Image Hover -->
+              <div class="ui-image-hover">
+                <!-- Name -->
+                <div class="ui-name" style="margin-top: 35%">
+                  <!-- User Name -->
+                  <h3><%= link_to "DA CLICK", pages_add_dream_path%></h3>
+                </div>
+                <!-- Social -->
+                <div class="ui-social">
+                  <!-- Facebook -->
+                  <%= link_to pages_add_dream_path do %>
+                    <i class="fa fa-caret-square-o-right fa-3x"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    <!--
+    <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <div class="ui-item">
+               <%= image_tag 'tiempo_portada.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Ahorrar tiempo y gastos</h5>
+              <div class="ui-image-hover">
+                <div class="ui-name" style="margin-top: 35%">
+                  <h3><a href="http://localhost:3000/dreams/save_time_and_expenses">DA CLICK</a></h3>
+                </div>
+                <div class="ui-social">
+                  <a href="http://localhost:3000/dreams/save_time_and_expenses"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <div class="ui-item">
+               <%= image_tag 'habilidad_portada3.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Tener una habilidad nueva</h5>
+              <div class="ui-image-hover">
+                <div class="ui-name" style="margin-top: 35%">
+                  <h3><a href="http://localhost:3000/dreams/new_skill">DA CLICK</a></h3>
+                </div>
+                <div class="ui-social">
+                  <a href="http://localhost:3000/dreams/new_skill"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <div class="ui-item">
+               <%= image_tag 'comprar_portada1.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Comprar algo que siempre desee</h5>
+              <div class="ui-image-hover">
+                <div class="ui-name" style="margin-top: 35%">
+                  <h3><a href="http://localhost:3000/dreams/buy_wish">DA CLICK</a></h3>
+                </div>
+                <div class="ui-social">
+                  <a href="http://localhost:3000/dreams/buy_wish"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+            <div class="ui-item">
+               <%= image_tag 'amor_portada9.jpg', :class => 'img-responsive' %>
+               <div class="ui-content ui-bg-gray">
+               <h5 class="text-white">Encontrar el amor</h5>
+              <div class="ui-image-hover">
+                <div class="ui-name" style="margin-top: 35%">
+                  <h3><a href="http://localhost:3000/dreams/love">DA CLICK</a></h3>
+                </div>
+                <div class="ui-social">
+                  <a href="http://localhost:3000/dreams/love"><i class="fa fa-caret-square-o-right fa-3x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          
+     -->
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+  <div class="jumbotron jumbotron-whats-on bg-white">
+    <div class="container altura">
+      <div class="row">
+
+      <h2 class="text-klein-purple">Sueños en proceso</h2>
+      <p>Ayudanos a acelerar su desarrollo, da click en los que te interesan y empezaremos a enviarte noticias, opciones y planes de accion para que los cumplas lo antes posibles. Hagamos este sueño juntos</p>
+
+           <!-- UI # -->
+        <div class="ui-159">
+        
+            <!-- All -->
+            <!-- All -->
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_olympic_games_path do %>
+                      <%= image_tag 'juegos_olimpicos_tokyo2020.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Asistir a los juegos Olimpicos</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_professional_athlete_path do %>
+                      <%= image_tag 'ser_deportista_profesional.png', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ser deportista profesional</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_buy_dream_path do %>
+                    <%= image_tag 'comprar_portada1.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Comprar algo que siempre quise</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_become_independent_path do %>
+                    <%= image_tag 'ser_independiente_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ser alguien independie<br>nte</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_good_leader_path do %>
+                    <%= image_tag 'ser_un_buen_lider_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ser un buen lider</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_find_passion_path do %>
+                    <%= image_tag 'encontrar_mi_mayor_pasion_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Encontrar mi mayor pasion</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_new_skill_path do %>
+                    <%= image_tag 'habilidad_portada3.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Tener una habilidad nueva</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_find_dream_job_path do %>
+                    <%= image_tag 'exito_laboral.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Encontrar el trabajo de mis sueños</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_find_love_path do %>
+                    <%= image_tag 'amor_portada9.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Encontrar el amor</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_world_cup_path do %>
+                    <%= image_tag 'mundial_futbol_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Asistir al mundial de futbol</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_save_time_and_expenses_path do %>
+                    <%= image_tag 'tiempo_portada.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ahorrar tiempo y gastos</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_attend_superbowl_path do %>
+                    <%= image_tag 'superbowl.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Asistir al SuperBowl</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_learn_personality_path do %>
+                    <%= image_tag 'aprender_mas_sobre_personalidad.png', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Aprender mas de mi personalidad</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+             
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_aurora_borealis_path do %>
+                    <%= image_tag 'aurora_boreal_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ver una aurora boreal</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+              <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_give_to_others_path do %>
+                    <%= image_tag 'ayudar_a_alguien_que_me_necesite_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                                <h6>Ayudar a alguien que me necesite</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_better_person_path do %>
+                    <%= image_tag 'ser_mejor_persona_pre.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Ser una mejor persona</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_become_investor_path do %>
+                    <%= image_tag 'inversionista.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Ser inversionista</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_become_inventor_path do %>
+                    <%= image_tag 'ser_inventor.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Ser inventor</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_another_planet_path do %>
+                    <%= image_tag 'visitar_otro_planeta.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Visitar otro planeta</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_young_and_retired_path do %>
+                    <%= image_tag '6-small.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Jubilarme joven</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div>
+            
+            <div class="ui-i">
+                <!-- Item -->
+                <div class="ui-item">
+                    <!-- Image -->
+                    <%= link_to dreams_in_process_fly_path do %>
+                    <%= image_tag 'poder_volar.jpg', :class => 'img-responsive', :size => '200x200' %>
+                    <!-- Hover -->
+                      <div class="ui-content ui-bg-blue">
+                                <!-- Heading -->
+                               <h6>Poder volar</h6>
+                                <!-- UI Content Hover -->   
+                                <div class="ui-hover">
+                                </div>
+                    <% end %>
+                            </div>
+                </div>
+            </div> 
+            <div class="margtop-30">
+              <p class="black fs-24">Tienes un sueño que no encuentras aqui o algun sueño especial. Agregalo abajo.</p>
+              <%= link_to "AGREGAR SUEÑO", pages_add_dream_path,
+              class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
+            </div>
+                
+
+        <script>
+            $(document).ready(function(){
+            
+                <!-- Select and deselect on click -->
+                $(".ui-i .ui-item").click(function(){
+                    if($(this).parent().hasClass("active")){
+                        $(this).parent().removeClass("active");
+                    }
+                    else{
+                        $(this).parent().addClass("active");
+                    }
+                });
+                
+                <!-- Select all -->
+                $(".ui-all .all").click(function(e){
+                    e.preventDefault();
+                    $(".ui-i").removeClass("active").addClass("active");
+                });
+                
+                <!-- Select none -->
+                $(".ui-all .none").click(function(e){
+                    e.preventDefault();
+                    $(".ui-i").removeClass("active");
+                });
+                
+            });
+
+            $.each($('div[id^=map]'), function(){
+            loadMap($(this).attr('id'), 12);
+          }) 
+       <!--$('.ui-i.active').length -->
+        </script>
+        </div>
+      </div>
+  </div>

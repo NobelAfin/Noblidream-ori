@@ -127,10 +127,13 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'pages/prueba'
   get 'pages/access'
-  get 'pages/dreams', to: "pages#dreams"
+  #get 'dreams', to: "dreams#dreams" 
   get 'pages/add_dream'
 
 
 root 'pages#index'
+resources :dreams do
+  resources :goals
+end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

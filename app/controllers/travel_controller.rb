@@ -1,4 +1,5 @@
 class TravelController < ApplicationController
+
   def europe
   end
   def steps_travel

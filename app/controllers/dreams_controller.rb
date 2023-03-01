@@ -1,8 +1,18 @@
 class DreamsController < ApplicationController
+
+  def index
+    @dreams = Dream.all
+  end
+
+  def new
+    @dreams = Dream.new
+  end
+
   def my_own_business
   end
 
   def travel
+  
   end
   
   def gamer
