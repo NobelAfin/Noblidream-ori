@@ -1,3 +1,3 @@
 class Goal < ApplicationRecord
-    belong_to :dream
+    belongs_to :dream
 end

@@ -1,4 +1,4 @@
 class Pc_gamer < ApplicationRecord
-    belong_to :dream
-    belong_to :goals
+    belongs_to :dream
+    belongs_to :goals
 end
