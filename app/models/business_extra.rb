@@ -1,4 +1,4 @@
 class Business_extra < ApplicationRecord
     belongs_to :dream
-    belongs_to :goals
+    belongs_to :goal
 end

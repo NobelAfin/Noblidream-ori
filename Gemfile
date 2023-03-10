@@ -54,3 +54,5 @@ gem 'psych', '< 4'
 gem 'webpacker', '~> 5.4'
 # better way to work with forms
 gem 'simple_form'
+# Devise is the way to simplify user registration, login and the jobs related to it
+gem 'devise'
