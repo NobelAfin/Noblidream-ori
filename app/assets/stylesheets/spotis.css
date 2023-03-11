@@ -9335,6 +9335,22 @@ html.force-hamburger .navbar-sidepanel .dropdown-menu>li>a,body.force-hamburger 
 	-o-transform:scale(1.1);
 	transform:scale(1.1)
 }
+.btn-scroll-arrow::before,
+.btn-scroll-arrow::after {
+width: 20px; 
+height :20px; 
+border-top :2px solid black; 
+border-right :2px solid black; 
+}
+
+.btn-scroll-arrow::before {
+transform :translate(-50%, -50%) rotate(45deg); 
+}
+	
+.btn-scroll-arrow::after {
+transform :translate(-50%, -50%) rotate(-135deg); 
+}
+
 .btn-scroll-text {
 	text-transform:uppercase;
 	-webkit-transition:color .3s ease-in-out;
