@@ -12,5 +12,5 @@
  *
  *= require_tree .
  *= require_self
- *= require carousel2
+ *= require carousel2 .
  */
