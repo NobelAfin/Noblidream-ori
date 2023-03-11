@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_11_072010) do
   enable_extension "plpgsql"
 
   create_table "architectural_styles", primary_key: "archstyle_id", id: :bigint, default: -> { "nextval('architectural_styles_id_seq'::regclass)" }, force: :cascade do |t|
-    t.string "description"
+    t.string "Description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -101,11 +101,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_11_072010) do
   create_table "goals", primary_key: "goal_id", id: :bigint, default: -> { "nextval('goals_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "title"
     t.bigint "dream_id"
-    t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["dream_id"], name: "index_goals_on_dream_id"
-    t.index ["travel_id"], name: "index_goals_on_travel_id"
   end
 
   create_table "house_extras", primary_key: "housextra_id", id: :bigint, default: -> { "nextval('house_extras_id_seq'::regclass)" }, force: :cascade do |t|
@@ -164,6 +162,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_11_072010) do
   end
 
   add_foreign_key "goals", "dreams", primary_key: "dream_id"
-  add_foreign_key "goals", "travels", primary_key: "travel_id"
   add_foreign_key "travels", "dreams", primary_key: "dream_id"
 end

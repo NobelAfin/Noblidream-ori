@@ -1,9 +1,9 @@
  <% if current_user %>
-     <li>
-     <%= link_to "Sueño Nuevo", pages_add_dream_path %>
+      <li class="alternate sidepanel-item-small">
+       <%= link_to "Explorar Sueños", dreams_path %>
      </li>
-     <li class="alternate sidepanel-item-small">
-     <%= link_to "Perfil", profile_overview_path, class: "user-link user-text navbar-user-text" %>
+     <li>
+       <%= link_to "Sueño Nuevo", pages_add_dream_path %>
      </li>
      <li role="separator" class="divider"></li>   
       
@@ -12,7 +12,7 @@
           <%= current_user.email %>
         </a>
         <div class="dropdown-menu"> 
-          <a class="dropdown-item" href="#">Another action</a>
+          <%= link_to "Perfil", profile_overview_path, class: "user-link user-text navbar-user-text" %>
           <div class="dropdown-divider"></div>
           <%= link_to "Editar cuenta", edit_user_registration_path, class:"dropdown-item" %>
           <br>

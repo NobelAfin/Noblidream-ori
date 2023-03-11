@@ -8,6 +8,11 @@ class DreamsController < ApplicationController
     @dreams = Dream.new
   end
 
+  def create
+    @dreams = dream.new(dream_params)
+    @dreams.user = current_user
+  end
+
   def my_own_business
   end
 
