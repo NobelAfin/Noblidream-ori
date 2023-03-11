@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   get 'dreams_in_process/olympic_games'
   get 'dreams_in_process/professional_athlete'

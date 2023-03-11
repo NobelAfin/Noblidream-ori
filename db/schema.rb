@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_11_040111) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "architectural_styles", force: :cascade do |t|
+  create_table "architectural_styles", primary_key: "archstyle_id", id: :bigint, default: -> { "nextval('architectural_styles_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "Description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "brand_and_models", force: :cascade do |t|
+  create_table "brand_and_models", primary_key: "brandmodels_id", id: :bigint, default: -> { "nextval('brand_and_models_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "title"
     t.string "brand"
@@ -29,7 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "business_categories", force: :cascade do |t|
+  create_table "business_categories", primary_key: "business_id", id: :bigint, default: -> { "nextval('business_categories_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "title"
     t.string "category"
@@ -38,28 +38,28 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "business_extras", force: :cascade do |t|
+  create_table "business_extras", primary_key: "businessextra_id", id: :bigint, default: -> { "nextval('business_extras_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "car_extras", force: :cascade do |t|
+  create_table "car_extras", primary_key: "carextra_id", id: :bigint, default: -> { "nextval('car_extras_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "car_years", force: :cascade do |t|
+  create_table "car_years", primary_key: "caryear_id", id: :bigint, default: -> { "nextval('car_years_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "consoles", force: :cascade do |t|
+  create_table "consoles", primary_key: "console_id", id: :bigint, default: -> { "nextval('consoles_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "brand"
     t.string "model"
@@ -67,14 +67,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "dreams", force: :cascade do |t|
+  create_table "dreams", primary_key: "dream_id", id: :bigint, default: -> { "nextval('dreams_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
   end
 
-  create_table "entrepreneur_infos", force: :cascade do |t|
+  create_table "entrepreneur_infos", primary_key: "entrepreneurinfo_id", id: :bigint, default: -> { "nextval('entrepreneur_infos_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "tienes_alguna_experiencia_emprendiendo"
     t.string "de_que_sector_fue_su_emprendimiento"
@@ -91,14 +91,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "gamer_extras", force: :cascade do |t|
+  create_table "gamer_extras", primary_key: "gamesextra_id", id: :bigint, default: -> { "nextval('gamer_extras_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "goals", force: :cascade do |t|
+  create_table "goals", primary_key: "goal_id", id: :bigint, default: -> { "nextval('goals_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "title"
     t.bigint "dream_id"
     t.datetime "created_at", null: false
@@ -106,14 +106,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.index ["dream_id"], name: "index_goals_on_dream_id"
   end
 
-  create_table "house_extras", force: :cascade do |t|
+  create_table "house_extras", primary_key: "housextra_id", id: :bigint, default: -> { "nextval('house_extras_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "pc_gamers", force: :cascade do |t|
+  create_table "pc_gamers", primary_key: "pcgamer_id", id: :bigint, default: -> { "nextval('pc_gamers_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "brand"
     t.string "model"
@@ -121,7 +121,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "rooms", force: :cascade do |t|
+  create_table "rooms", primary_key: "room_id", id: :bigint, default: -> { "nextval('rooms_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "name"
     t.integer "rooms_number"
@@ -131,14 +131,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.string "large_size"
   end
 
-  create_table "travel_gamers", force: :cascade do |t|
+  create_table "travel_gamers", primary_key: "travelgamer_id", id: :bigint, default: -> { "nextval('travel_gamers_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "dream_id"
     t.string "event"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "travels", force: :cascade do |t|
+  create_table "travels", primary_key: "travel_id", id: :bigint, default: -> { "nextval('travels_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "title"
     t.bigint "dream_id"
     t.datetime "created_at", null: false
@@ -149,6 +149,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_071610) do
     t.index ["dream_id"], name: "index_travels_on_dream_id"
   end
 
-  add_foreign_key "goals", "dreams"
-  add_foreign_key "travels", "dreams"
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  add_foreign_key "goals", "dreams", primary_key: "dream_id"
+  add_foreign_key "travels", "dreams", primary_key: "dream_id"
 end

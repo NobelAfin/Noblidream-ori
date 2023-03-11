@@ -1,0 +1,19 @@
+<header id="js-navbar" class="navbar navbar-default navbar-fixed-top navbar-semi-transparent navbar-highlight-aquamarine" role="banner">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <%= link_to "Noblidream", pages_index_path, class: "navbar-logo navbar-brand"%>
+    </div>
+ <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
+        
+    <ul class="nav navbar-nav navbar-right nav-main">
+      <%= render 'user/session_manager' %>
+    </ul>
+ </nav>
+   </div>
+</header>
