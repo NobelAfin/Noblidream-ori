@@ -1,48 +1,90 @@
-<h2>Sign up</h2>
+  <div class="bg-main">
+  <!--
+          <div style="display: block; background-image: url(&quot;//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png&quot;);" class="bg-main-img lazy lazy-no-small" data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div> -->
+      </div>
+<div class="jumbotron jumbotron-albums jumbotron-subscriptions">
+<div class="jumbotron-bg lazy lazy-no-small" style="background: url(../i/home/noise.png),linear-gradient(50deg,#010609 0,#1967bf 100%);" data-original=""></div>
+  <div class="container">
+   <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-10 col-lg-12">
+              <div class="animated animatedFadeInUp">
+                <h2>
+                  <span class="text-white">
+                      REGISTRO
+                  </span>
+                </h2>
+              </div>
+              <div class="animated animatedFadeInUp">
+                <p class="text-white">
+            Noblidream es nuestra aportación para ayudar a la humanidad a que llegue a ser algo de lo que todos estemos orgullosos de ser parte, con la esperanza de seguir moviendo a todos hacia nuestro mejor futuro. Podras cumplir cualquier cosa que hayas pensado alguna vez e incluso mejoraras tus actividades diarias.
+            Gracias por confiar en nosotros y a continuacion te presentamos nuestra vision. 
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      </div>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+<div class="jumbotron">
+    <div class="container altura bg-white">
+      <div class="row">
+
+
+<div style="max-width: 100%;
+margin: 20px auto;
+border: 1px solid #ddd;
+box-shadow: 2px 2px 0px 1px rgba(0,0,0,0.07);
+background: #fff;
+border-radius: 4px;">
+        <div>
+          <h3> REGISTRATE</h3>
+          <p>Actualmente el sueño de asisitir a los juegos olimpicos esta en investigacion, introduce tus datos para ser uno de los <b>100 primeros</b> en probarlo.</p>
+        </div>
+        <div class="ui-153">
+
+<div class="register-custom">
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal registrationForm' }) do |f| %>
   <%= f.error_notification %>
+  <div class="panel-body">
 
-  <div class="form-inputs">
-  <%= f.input :name,
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nombre(s) *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :name, 
                 required: true,
-                autofocus: true,
-                input_html: { autocomplete: "name" }%>
+                input_html: { autocomplete: "name", class: 'form-control' }, 
+                placeholder: 'Nombre(s)', label: false %>
+            </div>
+				</div>
   <%= f.input :surname,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "surname" }%>
   <%= f.input :mother_surname,
                 required: false,
-                autofocus: true,
                 input_html: { autocomplete: "surname" }%>
   <%= f.input :phone,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "phone" }%>
   <%= f.input :birthdate,
                 hint: "enter your date of birth",
-                required: true,
                 input_html: { type: "date" } %>
   <%= f.input :address,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "address" }%>
     <%= f.input :exterior_number,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "exterior_number" }%>
     <%= f.input :interior_number,
                 required: false,
-                autofocus: true,
                 input_html: { autocomplete: "interior_number" }%>
     <%= f.input :zip_code,
                 required: false,
-                autofocus: true,
                 input_html: { autocomplete: "zip_code" }%>
     <%= f.input :username,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "username" }%>
     <%= f.input :email,
                 required: true,
@@ -63,3 +105,18 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div> 
+</div>      
+
+        </div>
+</div>
+        <a href="http://localhost:3000/travel/steps_travel" class="btn btn-solid js-goto-signup js-button-hero-get-free">
+            ENVIAR
+    </a>
+
+
+      </div>
+    </div>
+</div>
+</div>
