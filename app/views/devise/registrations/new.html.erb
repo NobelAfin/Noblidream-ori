@@ -41,7 +41,7 @@ background: #fff;
 border-radius: 4px;">
         <div>
           <h3> REGISTRATE</h3>
-          <p>Actualmente el sueño de asisitir a los juegos olimpicos esta en investigacion, introduce tus datos para ser uno de los <b>100 primeros</b> en probarlo.</p>
+          <p>Regístrate y descubre cómo alcanzar tus sueños y <b>metas en la vida</b>, unete a nuestra comunidad de soñadores y aprende a definir y conseguir tus objetivos. No dejes que tus sueños se queden en el aire: crea tu plan de acción y <b>cumple tus metas.</b></p>
         </div>
         <div class="ui-153">
 
@@ -59,49 +59,114 @@ border-radius: 4px;">
                 placeholder: 'Nombre(s)', label: false %>
             </div>
 				</div>
-  <%= f.input :surname,
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Apellido Paterno *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :surname, 
                 required: true,
-                input_html: { autocomplete: "surname" }%>
-  <%= f.input :mother_surname,
-                required: false,
-                input_html: { autocomplete: "surname" }%>
-  <%= f.input :phone,
+                input_html: { autocomplete: "surname", class: 'form-control' }, 
+                placeholder: 'Apellido Paterno', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Apellido Materno</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :mother_surname, 
                 required: true,
-                input_html: { autocomplete: "phone" }%>
-  <%= f.input :birthdate,
-                hint: "enter your date of birth",
-                input_html: { type: "date" } %>
-  <%= f.input :address,
+                input_html: { autocomplete: "mother_surname", class: 'form-control' }, 
+                placeholder: 'Apellido Materno', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Fecha de nacimiento *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :birthdate, 
                 required: true,
-                input_html: { autocomplete: "address" }%>
-    <%= f.input :exterior_number,
+                input_html: { type: "date", class: 'form-control' }, 
+                placeholder: 'dd-mm-aaaa', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Teléfono *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :phone, 
                 required: true,
-                input_html: { autocomplete: "exterior_number" }%>
-    <%= f.input :interior_number,
-                required: false,
-                input_html: { autocomplete: "interior_number" }%>
-    <%= f.input :zip_code,
-                required: false,
-                input_html: { autocomplete: "zip_code" }%>
-    <%= f.input :username,
+                input_html: { autocomplete: "phone", class: 'form-control' }, 
+                placeholder: '(XX) XXXXXXXX', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Domicilio *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :address, 
                 required: true,
-                input_html: { autocomplete: "username" }%>
-    <%= f.input :email,
+                input_html: { autocomplete: "address", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Número Exterior *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :exterior_number, 
                 required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
+                input_html: { autocomplete: "exterior_number", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Número Interior</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :interior_number, 
                 required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
+                input_html: { autocomplete: "interior_number", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Código Postal</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :zip_code, 
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
-  </div>
+                input_html: { autocomplete: "zip_code", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nombre De Usuario *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :username, 
+                required: true,
+                input_html: { autocomplete: "username", class: 'form-control' }, 
+                placeholder: 'Elige un nombre de usuario', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Correo Electrónico *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :email, 
+                required: true,
+                input_html: { autocomplete: "email", class: 'form-control' }, 
+                placeholder: 'nombre@email.com', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Contraseña *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :password, 
+                required: true,
+                input_html: { autocomplete: "new-password", class: 'form-control' }, 
+                placeholder: ("#{@minimum_password_length} caracteres minimos" if @minimum_password_length), label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Confirmar Contraseña *</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :password_confirmation, 
+                required: true,
+                input_html: { autocomplete: "new-password", class: 'form-control' }, label: false %>
+            </div>
+				</div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Registrarte" %>
   </div>
+  <br>
 <% end %>
 
 <%= render "devise/shared/links" %>
@@ -111,9 +176,6 @@ border-radius: 4px;">
 
         </div>
 </div>
-        <a href="http://localhost:3000/travel/steps_travel" class="btn btn-solid js-goto-signup js-button-hero-get-free">
-            ENVIAR
-    </a>
 
 
       </div>
