@@ -1,18 +1,68 @@
-<h2>Olvidaste tu contraseña?</h2>
+<div class="bg-main">
+  <!--
+          <div style="display: block; background-image: url(&quot;//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png&quot;);" class="bg-main-img lazy lazy-no-small" data-original="//d2c87l0yth4zbw-2.global.ssl.fastly.net/i/home/bg-albums.png"></div> -->
+      </div>
 
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <div class="jumbotron jumbotron-albums jumbotron-subscriptions">
+  <div class="jumbotron-bg lazy lazy-no-small" data-original=""></div>
+  <div class="container">
+   <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-10 col-lg-12">
+              
+            </div>
+          </div>
+          </div>
+      </div>
+      </div>
+
+<div class="jumbotron">
+    <div class="container altura bg-white">
+      <div class="row">
+<div style="max-width: 100%;
+margin: 20px auto;
+border: 1px solid #ddd;
+box-shadow: 2px 2px 0px 1px rgba(0,0,0,0.07);
+background: #fff;
+border-radius: 4px;">
+        <div>
+        <h3>RECUPERAR CONTRASEÑA</h3>
+        <div class="ui-153">
+         <div class="register-custom">
+
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-horizontal registrationForm' }) do |f| %>
   <%= f.error_notification %>
 
+<div class="panel-body">
   <div class="form-inputs">
-    <%= f.input :email,
+
+  <div class="form-group">
+        <label class="col-md-4 control-label fs-16">Email</label>
+          <div class="no-padding col-md-6">
+           <%= f.input :email,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "email" } %>
+                input_html: { autocomplete: "email", class: 'form-control' }, 
+                placeholder: 'Tu email', label: false %>
+          </div>
+		</div>
+    
+  </div>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
+    <%= f.button :submit, "Enviame instrucciones para recuperar contraseña" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>      
+        </div>
+   </div>
+      </div>
+    </div>
+</div>
+</div>
+
+</div>
