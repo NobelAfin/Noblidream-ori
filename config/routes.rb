@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  get '/u/:id', to: 'users#profile', as: 'user'
+  get '/soñador/:id', to: 'users#profile', as: 'user'
 
   get 'dreams_in_process/olympic_games'
   get 'dreams_in_process/professional_athlete'

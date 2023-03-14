@@ -12,8 +12,8 @@
           <%= current_user.username %>
         </a>
         <div class="dropdown-menu"> 
-          <%= link_to "Perfil", profile_overview_path, class: "user-link user-text navbar-user-text" %>
-          <div class="dropdown-divider"></div>
+          <%= link_to "Perfil", user_path(current_user), class: "user-link user-text navbar-user-text" %>
+        <div class="dropdown-divider"></div>
           <%= link_to "Lista de Deseos", edit_user_registration_path, class:"dropdown-item" %>
           <br>
           <%= link_to "Editar Cuenta", edit_user_registration_path, class:"dropdown-item" %>
