@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_13_032452) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_14_044852) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "architectural_styles", primary_key: "archstyle_id", id: :bigint, default: -> { "nextval('architectural_styles_id_seq'::regclass)" }, force: :cascade do |t|
-    t.string "Description"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -101,9 +101,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_032452) do
   create_table "goals", primary_key: "goal_id", id: :bigint, default: -> { "nextval('goals_id_seq'::regclass)" }, force: :cascade do |t|
     t.string "title"
     t.bigint "dream_id"
+    t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["dream_id"], name: "index_goals_on_dream_id"
+    t.index ["travel_id"], name: "index_goals_on_travel_id"
   end
 
   create_table "house_extras", primary_key: "housextra_id", id: :bigint, default: -> { "nextval('house_extras_id_seq'::regclass)" }, force: :cascade do |t|
@@ -166,14 +168,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_032452) do
     t.string "exterior_number", limit: 8, null: false
     t.string "interior_number", limit: 8
     t.string "zip_code", limit: 8
-    t.datetime "last_login", precision: nil
     t.integer "num_of_hab"
     t.string "username", null: false
     t.integer "views", default: 0
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "goals", "dreams", primary_key: "dream_id"
+  add_foreign_key "goals", "travels", primary_key: "travel_id"
   add_foreign_key "travels", "dreams", primary_key: "dream_id"
 end
