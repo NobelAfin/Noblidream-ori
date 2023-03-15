@@ -64,7 +64,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Nombre(s)</label>
             <div class="no-padding col-md-6">
              <%= f.input :name, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "name", class: 'form-control' }, 
                 placeholder: 'Nombre(s)', label: false %>
@@ -74,7 +73,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Apellido Paterno</label>
             <div class="no-padding col-md-6">
              <%= f.input :surname, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "surname", class: 'form-control' }, 
                 placeholder: 'Apellido Paterno', label: false %>
@@ -84,7 +82,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Apellido Materno</label>
             <div class="no-padding col-md-6">
              <%= f.input :mother_surname, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "mother_surname", class: 'form-control' }, 
                 placeholder: 'Apellido Materno', label: false %>
@@ -93,8 +90,7 @@ border-radius: 4px;">
         <div class="form-group">
             <label class="col-md-4 control-label fs-16">Nueva Fecha de Nacimiento</label>
             <div class="no-padding col-md-6">
-             <%= f.input :birthdate, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
+             <%= f.input :birthdate, as: :date , html5: true,
                 required: false,
                 input_html: { type: "date", class: 'form-control' }, 
                 placeholder: 'dd-mm-aaaa', label: false %>
@@ -104,17 +100,61 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Teléfono</label>
             <div class="no-padding col-md-6">
              <%= f.input :phone, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "phone", class: 'form-control' }, 
                 placeholder: '(XX) XXXXXXXX', label: false %>
             </div>
 				</div>
         <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nuevo Estado Civil</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :civil_status,
+                required: false,
+                collection: ["Soltero(a)", "Casado(a)", "Divorciado(a)", "Viudo(a)"],
+                input_html: { autocomplete: "civil_status", class: 'form-control' }, 
+                prompt: 'Selecciona un estado civil', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nueva Escolaridad</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :schooling, 
+                required: false,
+                collection: ["Ninguno", "Primaria", "Secundaria", "Preparatoria/Bachiller", "Carrera Tecnica", "Licenciatura", "Maestria", "Doctorado"],
+                input_html: { autocomplete: "schooling", class: 'form-control' }, 
+                prompt: 'Selecciona una escolaridad', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nuevo Pais</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :country, 
+                required: false,
+                collection: ["Mexico", "Estados Unidos", "Argentina", "Bolivia", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "España", "Guatemala", "Guinea Ecuatorial", "Honduras", "Nicaragua", "Panama", "Uruguay", "Peru", "Puerto Rico", "Republica Dominicana", "Uruguay", "Venezuela"],
+                input_html: { autocomplete: "country", class: 'form-control' }, 
+                prompt: 'Selecciona un pais', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nuevo Estado</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :state, 
+                required: false,
+                input_html: { autocomplete: "state", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Municipio</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :municipality, 
+                required: false,
+                input_html: { autocomplete: "municipality", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
             <label class="col-md-4 control-label fs-16">Nuevo Domicilio</label>
             <div class="no-padding col-md-6">
-             <%= f.input :address,
-                hint: "Dejalo en blanco si no quieres cambiarlo", 
+             <%= f.input :address, 
                 required: false,
                 input_html: { autocomplete: "address", class: 'form-control' }, label: false %>
             </div>
@@ -123,7 +163,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Número Exterior</label>
             <div class="no-padding col-md-6">
              <%= f.input :exterior_number, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "exterior_number", class: 'form-control' }, label: false %>
             </div>
@@ -132,7 +171,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Número Interior</label>
             <div class="no-padding col-md-6">
              <%= f.input :interior_number, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "interior_number", class: 'form-control' }, label: false %>
             </div>
@@ -141,7 +179,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Código Postal</label>
             <div class="no-padding col-md-6">
              <%= f.input :zip_code, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "zip_code", class: 'form-control' }, label: false %>
             </div>
@@ -150,7 +187,6 @@ border-radius: 4px;">
             <label class="col-md-4 control-label fs-16">Nuevo Nombre De Usuario</label>
             <div class="no-padding col-md-6">
              <%= f.input :username, 
-                hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
                 input_html: { autocomplete: "username", class: 'form-control' }, 
                 placeholder: 'Elige un nombre de usuario', label: false %>
@@ -162,8 +198,7 @@ border-radius: 4px;">
              <%= f.input :password,
                 hint: "Dejalo en blanco si no quieres cambiarlo",
                 required: false,
-                input_html: { autocomplete: "new-password", class: 'form-control' }, 
-                placeholder: 'Elige un nombre de usuario', label: false %>
+                input_html: { autocomplete: "new-password", class: 'form-control' },  label: false %>
             </div>
 				</div>
         <div class="form-group">
@@ -171,8 +206,7 @@ border-radius: 4px;">
             <div class="no-padding col-md-6">
     <%= f.input :password_confirmation,
                 required: false,
-                input_html: { autocomplete: "new-password", class: 'form-control' }, 
-                placeholder: 'Elige un nombre de usuario', label: false %>
+                input_html: { autocomplete: "new-password", class: 'form-control' }, label: false %>
                 </div>
 				</div>
         <div class="form-group">
@@ -181,8 +215,7 @@ border-radius: 4px;">
     <%= f.input :current_password,
                 hint: "Necesitamos tu contraseña actual para confirmar los cambios",
                 required: true,
-                input_html: { autocomplete: "current-password", class: 'form-control' }, 
-                placeholder: 'Elige un nombre de usuario', label: false %>
+                input_html: { autocomplete: "current-password", class: 'form-control' }, label: false %>
                 </div>
 				</div>
 </div>

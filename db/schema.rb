@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_14_231511) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_15_041306) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -190,6 +190,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_14_231511) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.string "civil_status", limit: 40, default: "Selecciona un estado civil"
+    t.string "sex", limit: 30, default: "Seleccione una opción"
+    t.string "schooling", limit: 30, default: "Selecciona una escolaridad"
+    t.string "country", limit: 30, default: "Selecciona un pais"
+    t.string "state", limit: 30
+    t.string "municipality", limit: 30
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

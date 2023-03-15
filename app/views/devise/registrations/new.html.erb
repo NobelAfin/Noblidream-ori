@@ -80,7 +80,7 @@ border-radius: 4px;">
         <div class="form-group">
             <label class="col-md-4 control-label fs-16">Fecha de nacimiento *</label>
             <div class="no-padding col-md-6">
-             <%= f.input :birthdate, 
+             <%= f.input :birthdate, as: :date , html5: true,
                 required: true,
                 input_html: { type: "date", class: 'form-control' }, 
                 placeholder: 'dd-mm-aaaa', label: false %>
@@ -96,11 +96,68 @@ border-radius: 4px;">
             </div>
 				</div>
         <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Estado Civil</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :civil_status, 
+                required: false,
+                collection: ["Soltero(a)", "Casado(a)", "Divorciado(a)", "Viudo(a)"],
+                input_html: { autocomplete: "civil_status", class: 'form-control' }, 
+                prompt: 'Selecciona un estado civil', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Sexo</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :sex, 
+                required: false,
+                collection: ["Hombre", "Mujer"],
+                input_html: { autocomplete: "sex", class: 'form-control' }, 
+                prompt: 'Seleccione una opción', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Escolaridad</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :schooling, 
+                required: false,
+                collection: ["Ninguno", "Primaria", "Secundaria", "Preparatoria/Bachiller", "Carrera Tecnica", "Licenciatura", "Maestria", "Doctorado"],
+                input_html: { autocomplete: "schooling", class: 'form-control' }, 
+                prompt: 'Selecciona una escolaridad', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Pais</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :country, 
+                required: false,
+                collection: ["Mexico", "Estados Unidos", "Argentina", "Bolivia", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "España", "Guatemala", "Guinea Ecuatorial", "Honduras", "Nicaragua", "Panama", "Uruguay", "Peru", "Puerto Rico", "Republica Dominicana", "Uruguay", "Venezuela"],
+                input_html: { autocomplete: "country", class: 'form-control' }, 
+                prompt: 'Selecciona un pais', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Estado</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :state, 
+                required: false,
+                input_html: { autocomplete: "state", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Municipio</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :municipality, 
+                required: false,
+                input_html: { autocomplete: "municipality", class: 'form-control' }, label: false %>
+            </div>
+				</div>
+        <div class="form-group">
             <label class="col-md-4 control-label fs-16">Domicilio *</label>
             <div class="no-padding col-md-6">
              <%= f.input :address, 
                 required: true,
-                input_html: { autocomplete: "address", class: 'form-control' }, label: false %>
+                input_html: { autocomplete: "address", class: 'form-control' }, 
+                placeholder: 'Calle bonita 123', label: false %>
             </div>
 				</div>
         <div class="form-group">
@@ -134,6 +191,14 @@ border-radius: 4px;">
                 required: true,
                 input_html: { autocomplete: "username", class: 'form-control' }, 
                 placeholder: 'Elige un nombre de usuario', label: false %>
+            </div>
+				</div>
+        <div class="form-group">
+            <label class="col-md-4 control-label fs-16">Nuevo Domicilio</label>
+            <div class="no-padding col-md-6">
+             <%= f.input :address, 
+                required: false,
+                input_html: { autocomplete: "address", class: 'form-control' }, label: false %>
             </div>
 				</div>
         <div class="form-group">
