@@ -1,0 +1,15 @@
+<div class="bg-main">
+ <div style="display: block; background-image: url(&quot;http://imageshack.com/a/img922/6182/u5STDt.png&quot;);" class="bg-main-img lazy lazy-no-small" data-original="http://imageshack.com/a/img922/6182/u5STDt.png"></div> -->
+</div>
+
+<%= simple_form_for(@add_dream) do |f| %>
+  <%= f.input :nombre_del_sueño_que_deseas_registrar %>
+  <%= f.input :cuenta_la_historia_de_por_que_deseas_que_este_sueño_se_haga_re %>
+  <%= f.input :a_que_sector_industria_o_area_de_la_vida_pertenece_tu_sueño %>
+  <%= f.input :descripcion_de_el_sueño %>
+  <%= f.input :como_esperarias_hacerlo_realidad_si_tuvieras_dinero_infinito_vi_for_database %>
+  <%= f.input :como_se_resuelve_actualmente_el_sueño_completo_o_partes_del_su %>
+  <%= f.input :explica_tu_motivacion_para_llevar_a_cabo_este_sueño %>
+  <%= f.input :cuanto_tiempo_dinero_y_esfuerzo_estas_dispuesto_a_meterle_a_tu_ %>
+  <%= f.button :submit %>
+<% end %>

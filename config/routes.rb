@@ -132,8 +132,7 @@ Rails.application.routes.draw do
   get 'travel/world'
 
   get 'pages/index'
-  get 'pages/prueba'
-  get 'pages/access'
+  get 'pages/add_new'
   #get 'dreams', to: "dreams#dreams" 
   get 'pages/add_dream'
 
