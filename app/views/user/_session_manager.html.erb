@@ -19,6 +19,7 @@
           <%= link_to "Editar Cuenta", edit_user_registration_path, class:"dropdown-item" %>
           <br>
           <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
+          <%= link_to "Administrador", admin_path, class:"dropdown-item" if current_user.admin? %>
         </div>
       </li>
   <% else %>
