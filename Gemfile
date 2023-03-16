@@ -57,3 +57,5 @@ gem 'simple_form'
 gem 'country_select'
 # Devise is the way to simplify user registration, login and the jobs related to it
 gem 'devise'
+
+gem 'actionpack', '>= 7.0.4'
