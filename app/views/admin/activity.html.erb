@@ -2,4 +2,18 @@
  <h1 class= "text-center" >Administrador</h1>
  <%= render 'admin/nav_links' %>
 
+<% @activities.each do |activity| %>
+<li class= "list-group-item">
+  <%= activity.id %>
+  <%= activity.trackable_type %>
+  <%= activity.trackable_id %>
+  <%= link_to activity.trackable.name, activity.trackable %>
+  <%= activity.key %>
+  <%= activity.parameters %>
+  <%= activity.created_at %>
+  <%= activity.owner %>
+</li>
+<% end %>
+
+
 </div>

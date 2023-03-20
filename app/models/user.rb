@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def set_default_role
     self.role ||= :user
   end
+
+  include PublicActivity::Model
+  tracked
+
 end

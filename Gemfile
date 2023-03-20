@@ -59,3 +59,5 @@ gem 'country_select'
 gem 'devise'
 
 gem 'actionpack', '>= 7.0.4'
+# track all activity in the page on admin panel
+gem 'public_activity'

@@ -7,6 +7,7 @@ class AdminController < ApplicationController
   end
 
   def activity
+    @activities = PublicActivity::Activity.all
   end
 
   def dreams
