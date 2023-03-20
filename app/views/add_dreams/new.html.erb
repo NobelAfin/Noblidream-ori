@@ -9,22 +9,96 @@
             <div class="container">
             <div id="mensaje"></div>
 
-                <h2 class="text-white">Formulario de registro de nuevos sueños</h2>
+                <h2 class="text-white" style="padding-top: 50px;">Formulario de registro de nuevos sueños</h2>
                 <p class="text-white">Tienes un sueño unico que no esta en nuestra lista, agregalo aqui y trabajaremos en hacerlo realidad</p>
                 <p class="text-white">Introduce los datos que se te piden a continuacion</p>
 
-<%= simple_form_for(@add_dream) do |f| %>
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <%= f.input :nombre_del_sueño %>
-  <%= f.input :historia_del_sueño %>
-  <%= f.input :sector_del_sueño %>
-  <%= f.input :descripcion %>
-  <%= f.input :plan_ideal %>
-  <%= f.input :solucion_actual %>
-  <%= f.input :motivacion %>
-  <%= f.input :recursos %>
-  <%= f.button :submit %>
-<% end %>
+        <%= simple_form_for(@add_dream, html: {class: 'form-horizontal'}) do |f| %>
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <fieldset>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white fs-16">Nombre del sueño que deseas registrar *</label>
+              <div class="col-md-8">
+                <%= f.input :nombre_del_sueño, 
+                  required: true,
+                  input_html: { autocomplete: "nombre_del_sueño", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Como nombrarias a tu sueño</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white fs-16">Cuenta la historia de por que deseas que este sueño se haga realidad</label>
+              <div class="col-md-8">
+                <%= f.input :historia_del_sueño, 
+                  required: false,
+                  input_html: { autocomplete: "historia_del_sueño", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Coméntanos: La historia de cuando nacio la idea y su experiencia relacionada con el sueño.</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white fs-16">¿A qué sector, industria o area de la vida pertenece tu sueño? *</label>
+              <div class="col-md-8">
+                <%= f.input :sector_del_sueño, 
+                  required: true,
+                  input_html: { autocomplete: "sector_del_sueño", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Nos ayudara a entender y encontrar la mejor solucion para cumplir tu sueño.</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white fs-16">Descripción de el sueño *</label>
+              <div class="col-md-8">
+                <%= f.input :descripcion, 
+                  required: true,
+                  input_html: { autocomplete: "descripcion", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Explícanos de manera clara y concisa cual es el sueño.</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white">Como esperarias hacerlo realidad si tuvieras: dinero infinito, vida infinita e imaginacion infinita *</label>
+              <div class="col-md-8">
+                <%= f.input :plan_ideal, 
+                  required: true,
+                  input_html: { autocomplete: "plan_ideal", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Se lo mas creativo que puedas. Hazlo realidad en tu mente y escribelo.</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white">¿Cómo se resuelve actualmente el sueño completo o partes del sueño?</label>
+              <div class="col-md-8">
+                <%= f.input :solucion_actual, 
+                  required: false,
+                  input_html: { autocomplete: "solucion_actual", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Puede que para tu sueño no exista una solucion completa hoy dia, pero tal vez si parciales. Si las conoces apuntalas.</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white">¿Explica tu motivación para llevar a cabo este sueño</label>
+              <div class="col-md-8">
+                <%= f.input :motivacion, 
+                  required: false,
+                  input_html: { autocomplete: "motivacion", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">¿Por qué hacer esto y no otra cosa?</span>
+              </div>
+				    </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label text-white">¿Cuanto tiempo, dinero y esfuerzo estas dispuesto a meterle a tu sueño?</label>
+              <div class="col-md-8">
+                <%= f.input :recursos, 
+                  required: false,
+                  input_html: { autocomplete: "recursos", class: 'form-control input-md' }, label: false %>
+                  <span class="help-block text-white">Nos ayudara a entender mas sobre tus requerimentos para cumplir tu sueño</span>
+              </div>
+				    </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="singlebutton"></label>
+              <div class="col-md-8">
+                <%= f.button :submit, class: 'navbar-btn btn btn-solid3', data: { disable_with: 'Enviar Sueño' }, id: 'singlebutton', name: 'singlebutton',
+                 name: 'Crear sueño nuevo', value: "Crear sueño nuevo" do %>
+                 <% end %>
+              </div>
+            </div>
+        <% end %>
+        </fieldset>
 
 
             </div>

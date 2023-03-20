@@ -20,7 +20,13 @@ class AddDreamsController < ApplicationController
           redirect_to @add_dream
         else
           # Handle unsuccessful save here
-          flash.now[:error] = "Error al enviar formulario de nuevo sueño"
+          if @add_dream.errors.any?
+            flash.now[:error] = "Dejaste uno o más campos obligatorios vacíos"
+          elsif AddDream.exists?(nombre_del_sueño: @add_dream.nombre_del_sueño)
+            flash.now[:error] = "El nombre del sueño que añadiste ya existe"
+          else
+            flash.now[:error] = "Error al enviar formulario de nuevo sueño"
+          end
           render :new
         end
       end
