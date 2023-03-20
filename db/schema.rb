@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_19_231557) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_20_052727) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -35,14 +35,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_19_231557) do
 
   create_table "add_dreams", primary_key: "addream_id", force: :cascade do |t|
     t.integer "user_id"
-    t.string "nombre_del_sueño_que_deseas_registrar", null: false
-    t.string "cuenta_la_historia_de_por_que_deseas_que_este_sueño_se_haga_re"
-    t.string "a_que_sector_industria_o_area_de_la_vida_pertenece_tu_sueño", null: false
-    t.string "descripcion_de_el_sueño", null: false
-    t.string "como_esperarias_hacerlo_realidad_si_tuvieras_dinero_infinito_vi", null: false
-    t.string "como_se_resuelve_actualmente_el_sueño_completo_o_partes_del_su"
-    t.string "explica_tu_motivacion_para_llevar_a_cabo_este_sueño"
-    t.string "cuanto_tiempo_dinero_y_esfuerzo_estas_dispuesto_a_meterle_a_tu_"
+    t.string "nombre_del_sueño", null: false
+    t.string "historia_del_sueño"
+    t.string "sector_del_sueño", null: false
+    t.string "descripcion", null: false
+    t.string "plan_ideal", null: false
+    t.string "solucion_actual"
+    t.string "motivacion"
+    t.string "recursos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

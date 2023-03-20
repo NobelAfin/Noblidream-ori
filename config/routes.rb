@@ -141,9 +141,12 @@ Rails.application.routes.draw do
   get 'travel/world'
 
   get 'pages/index'
-  get 'pages/add_new'
-  get 'pages/add_dream', to: "pages#add_new"
-  post 'pages/add_dream', to: "pages#create"
+
+  get 'add_dreams/add_new', to: "add_dreams#new"
+
+  resources :add_dreams
+  get 'add_dreams/new', to: "add_dreams#new"
+  post 'add_dreams', to: "add_dreams#create"
   #get 'dreams', to: "dreams#dreams" 
 
 

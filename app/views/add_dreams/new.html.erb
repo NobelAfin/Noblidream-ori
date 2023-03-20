@@ -1,0 +1,35 @@
+<div class="bg-main">
+ <div style="display: block; background-image: url(&quot;http://imageshack.com/a/img922/6182/u5STDt.png&quot;);" class="bg-main-img lazy lazy-no-small" data-original="http://imageshack.com/a/img922/6182/u5STDt.png"></div> -->
+</div>
+
+<div class="jumbotron">
+    <div class="container altura">
+      <div class="row">
+<section id="registro">
+            <div class="container">
+            <div id="mensaje"></div>
+
+                <h2 class="text-white">Formulario de registro de nuevos sueños</h2>
+                <p class="text-white">Tienes un sueño unico que no esta en nuestra lista, agregalo aqui y trabajaremos en hacerlo realidad</p>
+                <p class="text-white">Introduce los datos que se te piden a continuacion</p>
+
+<%= simple_form_for(@add_dream) do |f| %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= f.input :nombre_del_sueño %>
+  <%= f.input :historia_del_sueño %>
+  <%= f.input :sector_del_sueño %>
+  <%= f.input :descripcion %>
+  <%= f.input :plan_ideal %>
+  <%= f.input :solucion_actual %>
+  <%= f.input :motivacion %>
+  <%= f.input :recursos %>
+  <%= f.button :submit %>
+<% end %>
+
+
+            </div>
+        </section>
+
+       </div>
+    </div>
+</div>

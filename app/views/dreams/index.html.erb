@@ -286,12 +286,12 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><%= link_to "DA CLICK", pages_add_dream_path%></h3>
+                  <h3><%= link_to "DA CLICK", new_add_dream_path%></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <%= link_to pages_add_dream_path do %>
+                  <%= link_to new_add_dream_path do %>
                     <i class="fa fa-caret-square-o-right fa-3x"></i>
                   <% end %>
                 </div>
@@ -769,7 +769,7 @@
             </div> 
             <div class="margtop-30">
               <p class="black fs-24">Tienes un sueño que no encuentras aqui o algun sueño especial. Agregalo abajo.</p>
-              <%= link_to "AGREGAR SUEÑO", pages_add_dream_path,
+              <%= link_to "AGREGAR SUEÑO", new_add_dream_path,
               class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
             </div>
                 
