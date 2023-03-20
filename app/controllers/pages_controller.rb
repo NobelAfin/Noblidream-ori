@@ -24,7 +24,7 @@ class PagesController < ApplicationController
       redirect_to @add_dream
     else
       # Handle unsuccessful save here
-      render :index
+      render :new
     end
   end
 

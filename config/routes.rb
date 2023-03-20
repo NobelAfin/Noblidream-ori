@@ -142,8 +142,9 @@ Rails.application.routes.draw do
 
   get 'pages/index'
   get 'pages/add_new'
+  get 'pages/add_dream', to: "pages#add_new"
+  post 'pages/add_dream', to: "pages#create"
   #get 'dreams', to: "dreams#dreams" 
-  get 'pages/add_dream'
 
 
 root 'pages#index'
