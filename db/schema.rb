@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_20_052727) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_20_072551) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,6 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_20_052727) do
     t.string "recursos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["nombre_del_sueño"], name: "index_add_dreams_on_nombre_del_sueño", unique: true
   end
 
   create_table "architectural_styles", primary_key: "archstyle_id", id: :bigint, default: -> { "nextval('architectural_styles_id_seq'::regclass)" }, force: :cascade do |t|
@@ -217,7 +218,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_20_052727) do
     t.string "municipality", limit: 30
     t.integer "role", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["phone"], name: "index_users_on_phone", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "add_dreams", "users", primary_key: "user_id"
