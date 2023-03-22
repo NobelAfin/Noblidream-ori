@@ -807,273 +807,382 @@
           <h3 class="text-klein-purple">Noblidream aprende de ti e intenta ayudarte</h3>
            <p class="text-black"> Estos son lo sueños que Noblidream puede ayudarte a cumplir, 
            los seleccionamos de acuerdo a tu personalidad y estilo de vida</p>
-           <p class="text-black fs-16">Voltea una imagen y descubre tu sueño recomendado</p>
+           <p class="text-black fs-16" style="margin-bottom:20px;">Voltea una imagen y descubre tu sueño recomendado</p>
           <!-- Nav Tabs -->
           <div class="ui-nav">
 
             <!-- Nav Tab One -->
-  <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-one" class="ui-item"  data-toggle="tab">
-            <%= image_tag 'viajar_mundo.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              
-              <!-- User Name -->
-              <span class="ui-name">Viajar por el mundo</span>
-              <object><a class='right' href='https://www.corsego.com/'>Cumplir sueño</a></object>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-one" class="ui-item" data-toggle="tab">
+              <%= image_tag 'viajar_mundo.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Viajar a todo el mundo</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno1'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno1').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= travel_world_path %>';
+       });
+      </script>
   
             <!-- Nav Tab Two -->
-            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-two" class="ui-item"  data-toggle="tab">
-            <%= image_tag '2-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+        <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-two" class="ui-item" data-toggle="tab">
+              <%= image_tag '2-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Emprender en alimentos y bebidas</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno2'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno2').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= business_food_and_beverages_path %>';
+       });
+      </script>
+
             <!-- Nav Tab Three -->
-            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-three" class="ui-item"  data-toggle="tab">
-            <%= image_tag '3-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-three" class="ui-item" data-toggle="tab">
+              <%= image_tag '3-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Encontrar mi proposito de vida</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno3'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno3').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= happy_life_purpose_path %>';
+       });
+      </script>
             <!-- Nav Tab Four -->
            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-four" class="ui-item"  data-toggle="tab">
-            <%= image_tag '4-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-four" class="ui-item" data-toggle="tab">
+              <%= image_tag '4-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Tener a mi familia unida</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno4'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno4').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= happy_family_united_path %>';
+       });
+      </script>
             <!-- Nav Tab Five -->
-            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-five" class="ui-item"  data-toggle="tab">
-            <%= image_tag '5-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-five" class="ui-item" data-toggle="tab">
+              <%= image_tag '5-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Tener un auto de lujo</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno5'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno5').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= new_car_luxury_car_path %>';
+       });
+      </script>
             <!-- Nav Tab Six -->
-            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-six" class="ui-item"  data-toggle="tab">
-            <%= image_tag '6-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-six" class="ui-item" data-toggle="tab">
+              <%= image_tag '6-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Encontrar nuevos mejores amigos</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno6'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno6').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= friends_new_best_friends_path %>';
+       });
+      </script>
             <!-- Nav Tab Seven -->
-           <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-seven" class="ui-item"  data-toggle="tab">
-            <%= image_tag '7-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-seven" class="ui-item" data-toggle="tab">
+              <%= image_tag '7-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Tener buena salud fisica</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno7'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno7').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= health_fisical_path %>';
+       });
+      </script>
             <!-- Nav Tab Eight -->
-            <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-eight" class="ui-item"  data-toggle="tab">
-            <%= image_tag '8-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-eight" class="ui-item" data-toggle="tab">
+              <%= image_tag '8-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Construir mi propia casa</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno8'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno8').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= house_build_local_house_path %>';
+       });
+      </script>
             <!-- Nav Tab Nine -->
-           <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-nine" class="ui-item"  data-toggle="tab">
-            <%= image_tag '9-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-nine" class="ui-item" data-toggle="tab">
+              <%= image_tag '9-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Emprender un negocio digital o software</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno9'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno9').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= business_software_path %>';
+       });
+      </script>
             <!-- Nav Tab Ten -->
-           <div class="ui-x">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
-            <a href="#img-ten" class="ui-item"  data-toggle="tab">
-            <%= image_tag '10-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
-            <span class="ui-back ui-flip">              <!-- User Name -->
-              <span class="ui-name">Staffy Quia</span>
-              <!-- Designation -->
-              <span class="ui-desig">Guardar en mi lista</span>
-              <!-- Social Media -->
-              <span class="ui-social">
-                <!-- Facebook -->
-                <i class="fa fa-facebook facebook"></i>
+      <div class="ui-x">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+              <a href="#img-ten" class="ui-item" data-toggle="tab">
+              <%= image_tag '10-small.jpg', :class => 'img-responsive ui-flip ui-front' %>
+                <span class="ui-back ui-flip">              
+                <!-- User Name -->
+                <span class="ui-name">Tener una buena salud emocional</span>
+                <!-- Reemplazar el elemento "object" con un elemento "span" -->
+                <span class='right cumplir-sueno10'>Cumplir sueño</span>
+                <!-- Designation -->
+                <span class="ui-desig">Guardar en mi lista</span>
+                <!-- Social Media -->
+                <span class="ui-social">
+                  <!-- Facebook -->
+                  <i class="fa fa-facebook facebook"></i>
                   <!-- Twitter -->
-                <i class="fa fa-twitter twitter"></i>
-                <!-- LinkedIn -->
-                <i class="fa fa-linkedin linkedin"></i>
-               </span>
-               </span>
-           </a>
+                  <i class="fa fa-twitter twitter"></i>
+                  <!-- LinkedIn -->
+                  <i class="fa fa-linkedin linkedin"></i>
+                </span>
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-      </div>      
-    </div>
+        </div>      
+      </div>
+
+      <script>
+      // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
+      document.querySelector('.cumplir-sueno10').addEventListener('click', function() {
+      // Redirigir al usuario a la URL interna deseada
+      window.location.href = '<%= health_emocional_path %>';
+       });
+      </script>
             
           </div>
         </div>
