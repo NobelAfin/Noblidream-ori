@@ -76,12 +76,12 @@
                 <!-- Name -->
                 <div class="ui-name" style="margin-top: 35%">
                   <!-- User Name -->
-                  <h3><%= link_to "DA CLICK", dreams_travel_path%></h3>
+                  <h3><%= link_to "DA CLICK", dreams_travel_path(id: @dream.id) %></h3>
                 </div>
                 <!-- Social -->
                 <div class="ui-social">
                   <!-- Facebook -->
-                  <%= link_to dreams_travel_path do %>
+                  <%= link_to dreams_travel_path(id: @dream.id) do %>
                     <i class="fa fa-caret-square-o-right fa-3x"></i>
                   <% end %>
                 </div>

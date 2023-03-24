@@ -859,12 +859,14 @@ Sueños, nobles, soñar, metas de vida, vivir con proposito, sueños nobles, buc
         </div>      
       </div>
 
+      <% dream_id = 1 %>
       <script>
       // Agregar un controlador de eventos para manejar el clic en el elemento "cumplir-sueno"
       document.querySelector('.cumplir-sueno1').addEventListener('click', function() {
-      // Redirigir al usuario a la URL interna deseada
-      window.location.href = '<%= travel_world_path %>';
-       });
+      // Generate the URL with the dream_id parameter
+      var url = '<%= travel_world_path(dream_id) %>';
+      window.location.href = url;
+      });
       </script>
   
             <!-- Nav Tab Two -->

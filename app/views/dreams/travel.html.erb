@@ -305,8 +305,7 @@
                   <a class="btn btn-icon-only black" role="button" data-toggle="collapse" href="#worldspre" aria-expanded="false" aria-controls="collapseExample">
                             LEER MAS
                   </a>
-           <div><%= link_to "ELEGIR", travel_world_path,
-           class: "ui-trigger btn btn-halo2 js-button-hero-get-premium" %></div>
+           <div><%= link_to "ELEGIR", travel_world_path(dream_id: @dream.id), class: "ui-trigger btn btn-halo2 js-button-hero-get-premium" %></div>
            </div>
 
          </div>

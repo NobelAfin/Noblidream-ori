@@ -2,6 +2,7 @@ class DreamsController < ApplicationController
 
   def index
     @dreams = Dream.all
+    @dream = Dream.first # asigna el primer sueño a la variable @dream
   end
 
   def new
@@ -17,7 +18,8 @@ class DreamsController < ApplicationController
   end
 
   def travel
-  
+    @dreams = Dream.find(params[:id])
+    @dream = Dream.first # asigna el primer sueño a la variable @dream
   end
   
   def gamer

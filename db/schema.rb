@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_20_072551) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_24_035554) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -138,8 +138,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_20_072551) do
     t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
     t.index ["dream_id"], name: "index_goals_on_dream_id"
     t.index ["travel_id"], name: "index_goals_on_travel_id"
+    t.index ["user_id"], name: "index_goals_on_user_id"
   end
 
   create_table "house_extras", primary_key: "housextra_id", id: :bigint, default: -> { "nextval('house_extras_id_seq'::regclass)" }, force: :cascade do |t|
@@ -226,5 +228,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_20_072551) do
   add_foreign_key "add_dreams", "users", primary_key: "user_id"
   add_foreign_key "goals", "dreams", primary_key: "dream_id"
   add_foreign_key "goals", "travels", primary_key: "travel_id"
+  add_foreign_key "goals", "users", primary_key: "user_id"
   add_foreign_key "travels", "dreams", primary_key: "dream_id"
 end
