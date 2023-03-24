@@ -1,3 +1,6 @@
+	<script src="//cdn.optimizely.com/js/146312396.js"></script>
+  <script src="https://kit.fontawesome.com/916442ede6.js" crossorigin="anonymous"></script>
+
 <h1> <%= @user.username %> </h1>
 <h6> <%= pluralize(@user.views, "view") %> </h6>
 <p>Find me in app/views/users/profile.html.erb</p>
@@ -11,3 +14,511 @@
 <% end %>
 <% end %>
 
+                
+    <title>Vista general de la cuenta - Sueños Nobles</title>
+       
+  <div class="wrap">            
+  <svg style="margin-bottom: -100px; vertical-align: middle;" width="50" height="50" viewBox="0 0 1024 1024" display="inline" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+  <symbol style="margin-bottom: -100px; vertical-align: middle;" width="50" height="50" id="icon-locked" viewBox="0 0 1024 1024">
+    <title>locked</title>
+    <path class="path1" d="M762.328 378.139q0-49.41-19.411-94.787t-51.931-78.149-77.392-52.183-94.283-19.411h-22.184q-28.234 0-55.46 6.302t-51.175 18.403-45.125 28.739-37.814 37.814-28.739 45.125-18.403 51.175-6.302 55.46v74.619q-26.722 3.529-45.125 23.949t-18.403 47.645v298.478q0 19.663 9.832 36.553t26.722 26.722 36.553 9.832h489.060q19.663 0 36.553-9.832t26.722-26.722 9.832-36.553v-296.965q0-18.151-8.571-33.78t-23.193-25.461-31.764-12.353v-74.619zM519.311 197.136q36.301 0 69.578 14.369t57.225 38.318 38.318 57.225 14.369 69.578v74.619h-381.164v-74.619q0-36.301 14.369-69.578t38.318-57.225 57.225-38.318 69.578-14.369h22.184z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-notifications" viewBox="0 0 1024 1024">
+    <title>notifications</title>
+    <path class="path1" d="M508.219 1022.992q35.797 0 65.544-18.403t46.385-49.158q-27.226 2.017-55.208 3.025t-56.721 1.008q-56.973 0-111.929-4.033 16.638 30.755 46.385 49.158t65.544 18.403zM828.88 406.877q-3.025-33.78-14.117-66.3t-28.991-60.754-41.343-52.435-51.679-43.108-59.494-30.503q1.008-6.554 1.513-11.092t0.504-9.075q0-52.435-37.31-89.745t-89.745-37.31-89.745 37.31-37.31 89.745q0 7.059 2.017 20.167-79.661 30.755-133.861 99.577t-61.763 153.524l-25.209 282.344q-23.193 8.067-41.343 17.394t-31.007 19.159-19.663 20.924-6.806 22.184q0 34.285 59.494 63.779t161.843 46.385 223.354 16.89 223.354-16.89 161.843-46.385 59.494-63.779q0-15.126-11.848-29.243t-33.78-26.722-53.192-23.697l-25.209-282.344zM508.219 53.948q32.772 0 56.217 23.445t23.445 56.217q0 1.008-0.504 2.017t-0.756 2.017-0.252 1.513q-28.234-5.546-56.469-5.546h-43.36q-28.234 0-56.469 6.050 0-1.008-0.756-3.025t-0.756-3.025q0-16.134 6.302-30.755t17.142-25.461 25.461-17.142 30.755-6.302z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-refresh" viewBox="0 0 1024 1024">
+    <title>refresh</title>
+    <path class="path1" d="M872.744 514.773v-0.504q0-74.115-28.739-141.676t-77.897-116.719-116.719-78.149-141.676-28.991q-123.525 0-221.841 75.124-90.249 69.578-125.542 177.473-17.646 54.956-18.151 112.937 0 74.115 28.991 141.676t78.149 116.719 116.719 77.897 141.676 28.739q37.814 0 74.367-7.311t70.838-22.436q18.151-8.067 25.461-26.47t-0.756-36.049q-3.529-9.075-10.588-15.63t-15.378-9.832-17.899-3.277-18.655 4.033q-51.427 21.68-107.391 21.68-54.956 0-104.871-21.176t-85.964-57.477-57.477-86.216-21.428-104.871q0-36.806 9.58-71.594t26.974-64.536 42.352-54.704 54.704-42.352 64.536-27.226 71.594-9.832q54.956 0 104.871 21.428t86.216 57.729 57.729 86.468 21.428 105.123h-104.366q-16.134 0-19.411 7.815t7.815 18.907l136.634 136.634q11.092 11.092 26.974 11.092t26.974-11.092l136.634-136.634q7.563-7.059 8.571-13.361t-4.033-9.832-15.63-3.529h-105.375z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-home" viewBox="0 0 1024 1024">
+    <title>home</title>
+    <path class="path1" d="M635.273 895.937v-254.109q0-26.218-18.655-44.872t-44.872-18.655h-127.055q-26.218 0-44.872 18.655t-18.655 44.872v254.109h-190.582v-380.66l-63.527 45.377v335.283q0 26.218 18.655 44.872t44.872 18.655h635.273q26.218 0 44.872-18.655t18.655-44.872v-335.283l-63.527-45.377v380.66h-190.582zM582.838 138.147q-20.672-14.621-47.645-19.915t-53.948 0-47.645 19.915l-393.264 280.831q-13.109 9.58-15.882 25.713t6.806 29.495 25.713 16.134 29.747-6.806l392.76-280.831q11.092-7.563 28.739-7.563t28.739 7.563l392.76 280.831q10.588 7.563 23.193 7.563 20.672 0 32.268-16.638 9.58-13.613 6.806-29.747t-15.882-25.713l-393.264-280.831z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-edit" viewBox="0 0 1024 1024">
+    <title>edit</title>
+    <path class="path1" d="M751.236 461.329q-28.234 28.234-75.628 20.167t-86.72-47.393-47.393-86.72 20.167-75.628l-0.504-0.504-325.704 325.704q-18.655 18.655-38.57 49.158t-29.999 54.704l-79.661 199.657q-3.529 9.075-4.286 16.638t1.26 12.605 6.806 7.815 11.344 2.773q9.075 0 20.167-4.538l199.657-79.661q16.134-6.554 35.797-17.899t37.814-24.957 30.251-25.713l325.704-325.704-0.504-0.504zM149.239 873.753l62.015-155.289q8.067-19.663 25.461-46.133t32.52-41.595l31.259-31.259q10.588 43.36 45.125 77.897t77.897 45.125l-31.259 31.259q-15.126 15.126-41.595 32.52t-46.133 25.461l-155.289 62.015zM908.037 114.954q-23.697-23.697-51.679-36.301t-54.2-12.605q-34.789 0-56.469 21.68l-0.504-0.504-115.963 115.963v0.504q-27.73 28.234-19.663 75.628t47.393 86.72 86.72 47.393 75.628-20.167l0.504 0.504 115.963-115.963-0.504-0.504q9.075-9.075 14.621-21.428t6.806-25.713-1.26-28.234-8.571-29.747-16.134-29.495-22.688-27.73zM802.159 97.812q13.613 0 28.234 4.79t28.739 13.613 26.218 21.428q32.268 31.764 38.822 69.578 0.504 5.042 0.756 10.336t-0.504 12.1-3.529 13.361-7.815 11.596q-12.1 12.1-34.285 12.1-20.167 0-42.352-10.336t-40.839-28.991q-19.159-19.159-29.747-42.099t-10.084-43.108 12.605-32.268 33.78-12.1z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-offline" viewBox="0 0 1024 1024">
+    <title>offline</title>
+    <path class="path1" d="M415.449 376.626l-2.521 11.092h-222.346q-52.435 0-89.745 37.31t-37.31 89.745 37.31 89.745 89.745 37.31h158.818l-2.521 11.092q-8.067 32.268 2.269 59.494t35.545 42.352l119.996-479.984q-21.176 10.084-39.326 25.461t-31.259 35.293-18.655 41.091zM667.037 387.718l2.521-11.092q5.546-22.184 2.521-41.595t-13.613-34.789-26.722-25.461l-119.996 479.984q32.772-15.126 56.973-42.352t32.268-59.494l2.521-11.092h222.346q52.435 0 89.745-37.31t37.31-89.745-37.31-89.745-89.745-37.31h-158.818z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-payment" viewBox="0 0 1024 1024">
+    <title>payment</title>
+    <path class="path1" d="M139.659 768.882h737.119q31.259 0 53.696-22.436t22.436-53.696v-241.505h-889.383v241.505q0 31.259 22.436 53.696t53.696 22.436zM730.564 578.3h63.527q13.109 0 22.436 9.327t9.327 22.436v63.527q0 13.109-9.327 22.436t-22.436 9.327h-63.527q-13.109 0-22.436-9.327t-9.327-22.436v-63.527q0-13.109 9.327-22.436t22.436-9.327zM139.659 197.136q-31.259 0-53.696 22.436t-22.436 53.696v50.923h889.383v-50.923q0-31.259-22.436-53.696t-53.696-22.436h-737.119z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-payment-history" viewBox="0 0 1024 1024">
+    <title>payment-history</title>
+    <path class="path1" d="M127.055 514.773q0 77.645 30.251 148.23t81.174 121.509 121.509 81.174 148.23 30.251 148.23-30.251 121.509-81.174 81.174-121.509 30.251-148.23-30.251-148.23-81.174-121.509-121.509-81.174-148.23-30.251-148.23 30.251-121.509 81.174-81.174 121.509-30.251 148.23zM184.028 514.773q0-52.939 16.386-102.35t46.385-89.241 69.83-69.83 89.241-46.385 102.35-16.386q66.048 0 125.794 25.713t103.358 69.325 69.325 103.358 25.713 125.794q0 112.433-70.082 200.666-65.544 82.686-165.877 110.921-43.36 12.1-88.232 12.605-66.048 0-125.794-25.713t-103.358-69.325-69.325-103.358-25.713-125.794zM655.945 600.484l-86.72-73.611q2.521-12.1 2.521-12.1 0-13.109-6.050-26.218l64.032-94.787q12.1-17.646 15.126-39.326l3.529-25.713q1.008-8.571-3.529-11.848t-12.605 0.756l-23.697 12.605q-7.563 4.538-16.89 12.857t-14.369 15.378l-63.023 93.778q-1.008 0-3.025-0.504l-3.025-0.504q-26.218 0-44.872 18.655t-18.655 44.872 18.655 44.872 44.872 18.655q7.563 0 19.159-4.033l87.728 74.619q16.638 13.613 37.814 19.159l24.705 6.050q9.075 2.521 12.857-2.017t0.252-12.605l-10.084-24.705q-1.513-4.033-4.286-9.075t-6.302-9.58-7.059-8.571-7.059-7.059z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-redeem" viewBox="0 0 1024 1024">
+    <title>redeem</title>
+    <path class="path1" d="M254.109 70.082q-26.218 0-44.872 18.655t-18.655 44.872v762.328q0 26.218 18.655 44.872t44.872 18.655h508.219q26.218 0 44.872-18.655t18.655-44.872v-762.328q0-26.218-18.655-44.872t-44.872-18.655h-508.219zM444.691 197.136v-63.527h127.055v63.527h127.055v63.527h-381.164v-63.527h127.055zM698.801 895.937h-381.164q-26.218 0-44.872-18.655t-18.655-44.872v-254.109q0-26.218 18.655-44.872t44.872-18.655h381.164q26.218 0 44.872 18.655t18.655 44.872v254.109q0 26.218-18.655 44.872t-44.872 18.655z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-apps" viewBox="0 0 224.729 224.729">
+    <title>apps</title>
+    <path class="path1" d="M164.112,224.729H0.364v-57.27c6.506,6.84,15.69,11.11,25.877,11.11
+    c19.725,0,35.713-15.99,35.713-35.714c0-19.725-15.988-35.715-35.713-35.715c-10.187,0-19.371,4.271-25.877,11.113V60.98h56.634
+    c-6.471-6.464-10.474-15.398-10.474-25.268C46.525,15.99,62.513,0,82.239,0c19.723,0,35.715,15.99,35.715,35.713
+    c0,9.87-4.004,18.804-10.475,25.268h56.633v55.938c6.4-6.057,15.033-9.778,24.539-9.778c19.725,0,35.713,15.99,35.713,35.715
+    c0,19.724-15.988,35.714-35.713,35.714c-9.506,0-18.139-3.722-24.539-9.778V224.729z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-check" viewBox="0 0 1024 1024">
+    <title>check</title>
+    <path class="path1" d="M435.616 866.19l-254.109-232.934q-18.655-17.142-19.663-42.099t15.882-43.36 41.847-19.411 43.612 15.63l196.128 179.994 281.335-544.016q11.596-22.184 35.293-29.747t45.881 3.781 29.747 35.293-4.033 46.133l-317.637 614.097q-3.025 6.554-7.563 11.848t-10.084 9.327-11.848 6.806-13.361 3.781q-2.017 0.504-3.781 0.756t-3.529 0.252-3.277 0q-23.697 0-40.839-16.134z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-email" viewBox="0 0 1024 1024">
+    <title>email</title>
+    <path class="path1" d="M590.905 533.932l362.005-226.379v-46.889q0-26.218-18.655-44.872t-44.872-18.655h-762.328q-26.218 0-44.872 18.655t-18.655 44.872v46.889l362.005 226.379q21.68 13.613 52.183 18.403t61.006 0 52.183-18.403zM508.219 649.895q-36.806 0-71.090-8.823t-62.015-25.966l-311.586-195.12v348.896q0 26.218 18.655 44.872t44.872 18.655h762.328q26.218 0 44.872-18.655t18.655-44.872v-348.896l-311.586 195.12q-18.655 11.092-40.587 19.159t-45.125 11.848-47.393 3.781z"></path>
+  </symbol>
+  <!-- TODO: Replace this "push/mobile" icon. It's not the right one -->
+  <symbol width="50" height="50" id="icon-push" viewBox="0 0 1024 1024">
+    <title>push</title>
+    <path class="path1" d="M635.273 133.609h63.527v-31.764q0-39.326-27.982-67.309t-67.309-27.982h-381.164q-39.326 0-67.309 27.982t-27.982 67.309v635.273q0 39.326 27.982 67.309t67.309 27.982h31.764v-127.055h-63.527v-571.746h444.691zM412.928 197.136q-39.326 0-67.309 27.982t-27.982 67.309v635.273q0 39.326 27.982 67.309t67.309 27.982h381.164q39.326 0 67.309-27.982t27.982-67.309v-635.273q0-39.326-27.982-67.309t-67.309-27.982h-381.164zM381.164 895.937v-571.746h444.691v571.746h-444.691z"></path>
+  </symbol>
+  <symbol width="50" height="50" id="icon-checkmark" viewBox="0 0 1024 1024">
+    <path class="path1" d="M435.616 866.19l-254.109-232.934q-9.075-8.571-14.117-19.663t-5.546-22.436 3.529-22.688 12.605-20.419q16.638-18.655 41.595-19.663t43.612 15.63l196.128 179.994 281.335-544.016q11.596-22.184 35.293-29.747t45.881 3.781 29.747 35.293-4.033 46.133l-317.637 614.097q-6.554 12.605-17.899 20.924t-24.957 10.84q-2.017 0.504-3.781 0.756t-3.529 0.252-3.277 0q-23.697 0-40.839-16.134z"></path>
+  </symbol>
+  </defs>
+</svg>
+
+  <div class="container container-submenu visible-xs">
+          <div class="row">
+        <div class="col-xs-12">
+          
+  
+      
+                                                                                        
+  <div class="submenu-backdrop"></div>
+  <div class="btn-group-inverse">
+    <button type="button" class="btn btn-submenu dropdown-toggle" data-toggle="dropdown">
+              <svg><use xlink:href="#icon-home"></use></svg>
+            <span class="icon-chevron-down"></span> Vista general de la cuenta
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        
+                    
+  <li class="active" id="submenu-item-account-overview">
+  <a href="/mx/account/overview/"><svg><use xlink:href="#icon-home"></use></svg> Vista general de la cuenta</a>
+  </li>
+
+                        
+  <li id="submenu-item-family-plan">
+  <a href="/mx/account/familyplan/"><svg><use xlink:href="#icon-redeem"></use></svg> Cuenta de Soñador</a>
+  </li>
+
+                        
+  <li id="submenu-item-edit-profile">
+  <a href="/mx/account/profile/"><svg><use xlink:href="#icon-edit"></use></svg> Editar perfil</a>
+  </li>
+
+                                        
+  <li id="submenu-item-change-password">
+  <a href="/mx/account/change-password/"><svg><use xlink:href="#icon-locked"></use></svg> Cambiar contraseña</a>
+  </li>
+
+                        
+  <li id="submenu-item-notification-settings">
+  <a href="/mx/account/notifications/"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
+  </li>
+
+                        
+  <li id="submenu-item-offline-devices">
+  <a href="/mx/account/offline-devices/"><svg><use xlink:href="#icon-offline"></use></svg> Dispositivos offline</a>
+  </li>
+
+                        
+  <li id="submenu-item-recover-playlists">
+  <a href="/mx/account/recover-playlists/"><svg><use xlink:href="#icon-refresh"></use></svg> Recuperar playlists</a>
+  </li>
+
+                        
+  <li id="submenu-item-subscription">
+  <a href="/mx/account/subscription/"><svg><use xlink:href="#icon-payment"></use></svg> Suscripción</a>
+  </li>
+
+                        
+  <li id="submenu-item-receipts">
+  <a href="/mx/account/subscription/receipt/"><svg><use xlink:href="#icon-payment-history"></use></svg> Recibos</a>
+  </li>
+
+                        
+  <li id="submenu-item-apps">
+  <a href="/mx/account/apps/"><svg><use xlink:href="#icon-apps"></use></svg> Apps</a>
+  </li>
+
+                        
+  <li id="submenu-item-redeem">
+  <a href="/mx/redeem/"><svg><use xlink:href="#icon-redeem"></use></svg> Canjear</a>
+  </li>
+
+      
+    </ul>
+  </div>
+
+        </div>
+      </div>
+      </div>
+
+    <div class="content-wrapper">
+
+              
+  <div class="container container-jumbotron container-family">
+
+    <div class="jumbotron jumbotron-hero jumbotron-inverse  jumbotron-family ">
+      <div class="row">
+        <div class="col-sm-9">
+          <h2 class="h1">
+              Cuenta de soñador.
+          </h2>
+
+          <p>
+            Administra el avance en tus sueños, añade nuevos y comparte la bondad.          </p>
+
+                      <a href="  /mx/family/" class="btn btn-lg btn-block hidden-xs btn-green">
+                Más información
+            </a>
+          
+          
+                  </div>
+        <div class="col-sm-4">
+                      <a href="    /mx/family/" class="btn btn-overview-xs btn-green">
+                  Más información
+
+            </a>
+          
+            <img class="jumbotron-fp6-mobile visible-xs-block" src="//d2c87l0yth4zbw.global.ssl.fastly.net/i/account/overview/jumbotron-fp6-mobile.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="container container-content">
+      <div class="row">
+                  <div class="col-sm-3 hidden-xs">
+            
+<div class="sidebar">
+    
+            <img class="user-img img-circle " src="https://graph.facebook.com/696916603705344/picture?width=64&amp;height=64" alt="nobelarmy">
+
+  
+    
+  <ul class="nav-inverse nav-tabs nav-stacked">
+      
+                    
+  <li class="active" id="submenu-item-account-overview">
+  <a href="/mx/account/overview/"><svg><use xlink:href="#icon-home"></use></svg> Vista general de la cuenta</a>
+  </li>
+
+                        
+  <li id="submenu-item-family-plan">
+  <a href="/mx/account/familyplan/"><svg><use xlink:href="#icon-redeem"></use></svg> Plan Familiar Premium</a>
+  </li>
+
+                        
+  <li id="submenu-item-edit-profile">
+  <a href="/mx/account/profile/"><svg><use xlink:href="#icon-edit"></use></svg> Editar perfil</a>
+  </li>
+
+                                        
+  <li id="submenu-item-change-password">
+  <a href="/mx/account/change-password/"><svg><use xlink:href="#icon-locked"></use></svg> Cambiar contraseña</a>
+  </li>
+
+                        
+  <li id="submenu-item-notification-settings">
+  <a href="/mx/account/notifications/"><svg><use xlink:href="#icon-notifications"></use></svg> Configurar notificaciones</a>
+  </li>
+
+                        
+  <li id="submenu-item-offline-devices">
+  <a href="/mx/account/offline-devices/"><svg><use xlink:href="#icon-offline"></use></svg> Dispositivos offline</a>
+  </li>
+
+                        
+  <li id="submenu-item-recover-playlists">
+  <a href="/mx/account/recover-playlists/"><svg><use xlink:href="#icon-refresh"></use></svg> Recuperar playlists</a>
+  </li>
+
+                        
+  <li id="submenu-item-subscription">
+  <a href="/mx/account/subscription/"><svg><use xlink:href="#icon-payment"></use></svg> Suscripción</a>
+  </li>
+
+                        
+  <li id="submenu-item-receipts">
+  <a href="/mx/account/subscription/receipt/"><svg><use xlink:href="#icon-payment-history"></use></svg> Recibos</a>
+  </li>
+
+                        
+  <li id="submenu-item-apps">
+  <a href="/mx/account/apps/"><svg><use xlink:href="#icon-apps"></use></svg> Apps</a>
+  </li>
+
+                        
+  <li id="submenu-item-redeem">
+  <a href="/mx/redeem/"><svg><use xlink:href="#icon-redeem"></use></svg> Canjear</a>
+  </li>
+
+      
+  </ul>
+
+</div>
+          </div>
+                        <div class="col-sm-9">
+          <div class="content">
+                                    
+            
+            
+              <div class="page-header">
+    <h1>Vista general de la cuenta</h1>
+  </div>
+
+            
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well card profile" id=""><h3 class="text-primary">Perfil</h3><form role="form"><div class="form-group"><label class="control-label">Nombre de usuario</label><p class="form-control-static" id="card-profile-username">nobelarmy</p></div><div class="form-group"><label class="control-label">Email</label><p class="form-control-static" id="card-profile-email">nobelarmy@outlook.com</p></div><div class="form-group"><label class="control-label">Fecha de nacimiento</label><p class="form-control-static" id="card-profile-dob">09/02/96</p></div><div class="form-group"><label class="control-label">País</label><p class="form-control-static" id="card-profile-country">MX</p></div><div class="form-group"><label class="control-label">Código postal</label><p class="form-control-static" id="card-profile-postalcode">12354</p></div></form><a href="/mx/account/profile/" class="btn btn-black btn-sm btn-block center-block" id="btn-edit-profile">Editar perfil</a></div>
+    </div>
+    <div class="col-md-6">
+                  <div class="well card subscription free" id=""><h3 class="text-left text-primary visible-xs-block visible-sm-block">Suscripción</h3><h3 class="product-name">Noblidream</h3><p class="subscription-status subscription-compact">
+      Aqui puedes ver tu plan de accion de Sueños Nobles. Sueña, Planea, Invierte y vuelve todo realidad
+    </p><a href="/mx/purchase/panel/" class="button btn btn-green btn-sm center-block" id="btn-cta-subscription-card">Obtén Premium</a></div>
+    </div>
+  </div>
+
+  
+  
+  <div class="well card signout-everywhere" id="signout-everywhere"><h3 class="text-primary">Cierra sesión en todas partes</h3><div class="row"><div class="col-md-6"><p>Cierra sesión dondequiera que tengas Spotify abierto, lo que incluye la web, el celular, tu computadora de escritorio o cualquier otro dispositivo.</p></div><div class="col-md-6"><form id="disconnectSessionsForm" action="/mx/account/disconnect-sessions/" method="POST"><input id="sp_csrf_disconnect" name="sp_csrf_disconnect" value="XF4Y5byP0nWfTBe0YbuC_JRF0nvOwOlrun-X1j3l9Zg" type="hidden"><button type="submit" class="btn btn-black btn-sm btn-block center-block js-gtm-event" id="btn-signout-everywhere" data-ga-category="account" data-ga-action="sign out everywhere" data-ga-label="sign-out-everywhere-account" data-gtm-event-name="signout_everywhere_button_clicked">
+          Cierra sesión en todas partes
+        </button></form></div></div></div>
+
+  
+
+  
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+  
+
+      </div>
+
+      <footer role="contentinfo" class="footer footer-default ">
+  <div class="container">
+    <nav class="row">
+
+            <div class="col-xs-12 col-md-2">
+        <div class="footer-logo">
+          <a href="/mx/">Noblidream</a>
+        </div>
+      </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-2">
+        <h3 class="nav-title">Compañía</h3>
+        <ul class="nav">
+          
+  <li>
+    <a href="/mx/about-us/contact/" id="nav-link-about" data-ga-category="menu" data-ga-action="about">
+      Acerca de
+                </a>
+  </li>
+
+  <li>
+    <a href="/mx/jobs/" id="nav-link-jobs" data-ga-category="menu" data-ga-action="jobs">
+      Empleos
+                </a>
+  </li>
+
+  <li>
+    <a href="https://press.spotify.com/mx/" id="nav-link-press" data-ga-category="menu" data-ga-action="press">
+      Prensa
+                </a>
+  </li>
+
+  <li>
+    <a href="https://news.spotify.com/mx/" id="nav-link-news" data-ga-category="menu" data-ga-action="news">
+      Noticias
+                </a>
+  </li>
+
+        </ul>
+      </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-2">
+        <h3 class="nav-title">Comunidades</h3>
+        <ul class="nav">
+          
+  <li>
+    <a href="https://artists.spotify.com/" id="nav-link-artists" data-ga-category="menu" data-ga-action="artists">
+      Servicios para artistas
+                </a>
+  </li>
+
+  <li>
+    <a href="https://developer.spotify.com/" id="nav-link-developers" data-ga-category="menu" data-ga-action="developers">
+      Desarrolladores
+                </a>
+  </li>
+
+  <li>
+    <a href="/mx/brands/" id="nav-link-brands" data-ga-category="menu" data-ga-action="brands">
+      Marcas
+                </a>
+  </li>
+
+        </ul>
+      </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-2">
+        <h3 class="nav-title">Enlaces útiles</h3>
+        <ul class="nav">
+            <li>
+    <a href="https://support.spotify.com/?utm_source=www.spotify.com&amp;utm_medium=www_footer" id="nav-link-help" data-ga-category="menu" data-ga-action="help">
+      Ayuda
+                </a>
+  </li>
+
+  <li>
+    <a href="/mx/purchase/ecards/" id="nav-link-gift" data-ga-category="menu" data-ga-action="gift">
+      Regalo
+                </a>
+  </li>
+
+    <li class="hidden-xs ">
+    <a href="/mx/redirect/webplayerlink/?utm_medium=www_footer" id="nav-link-play" data-ga-category="menu" data-ga-action="play">
+      Reproductor web
+                </a>
+  </li>
+
+        </ul>
+      </div>
+
+            <div class="col-xs-12 col-md-4 col-social">
+        <ul class="nav">
+          <li>
+  <a href="http://instagram.com/spotify">
+    <svg class="social-icon">
+      <use xlink:href="#instagram-icon">
+    <svg>
+    </svg></use></svg><span class="social-text">Instagram</span>
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/spotify">
+    <svg class="social-icon">
+      <use xlink:href="#twitter-icon">
+    <svg>
+    </svg></use></svg><span class="social-text">Twitter</span></a>
+</li>
+<li>
+  <a href="https://www.facebook.com/Spotify">
+    <svg class="social-icon">
+      <use xlink:href="#facebook-icon">
+    <svg>
+    </svg></use></svg><span class="social-text">Facebook</span>
+  </a>
+</li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="row row-small">
+      <div class="col-xs-8 col-md-6">
+
+                <ul class="nav nav-small">
+          <li>
+            <a href="/mx/legal/">Legal</a>
+          </li>
+          <li>
+            <a href="/mx/legal/privacy-policy/">Privacidad</a>
+          </li>
+          <li>
+            <a href="/mx/legal/privacy-policy/#s13">Cookies</a>
+          </li>
+          <li>
+            <a href="/mx/legal/privacy-policy/#s13">Sobre los anuncios</a>
+          </li>
+        </ul>
+      </div>
+
+            <div class="col-xs-4 col-md-6 text-right">
+                <a class="market" href="/mx/select-your-country/" title="Haz clic para cambiar">
+          <div class="media">
+            <div class="media-body media-middle">
+              México
+            </div>
+            <div class="media-right media-middle">
+              <span class="media-object flag-icon flag-icon-mx"></span>
+            </div>
+          </div>
+        </a>
+
+                <small class="copyright">© 2022 Noblidream </small>
+      </div>
+    </nav>
+  </div>
+</footer>
+  
+           <script src="//d2c87l0yth4zbw.global.ssl.fastly.net/build/js/spweb-site-ab863a05ab.min.js"></script>
+   
+  <script src="//d2c87l0yth4zbw.global.ssl.fastly.net/build/js/account-9a76946596.js"></script>
+  <script>
+    </script>
+  <script>
+    $(function() {
+      spweb.account.submenu.init();
+      spweb.account.subscription.init();
+      spweb.account.notifications.init();
+    });
+  </script>
+
+  <script>
+    $(function() {
+      spweb.account.signout.init();
+    });
+  </script>
+
+    <script>results = ["a130cc7832e02c643d5d3e5713b2d45053ad33d908c2d026cb3686c2d0550580", "AuG3Et4PAf9zbyqdY9gMsvtRJdZZFaIM0eLfKhj48pBlc0rS/hxzCBgMvDbFEqrXwwWKF2vuO+NEpTWYQJXfNQeIE2nAhnydRhKlW86Ixciu9ZwBHam/Br/j+k7ORTcTHJj1A5pwvydtxJCBhU+TfQd/bkAss3qvtuvQodU8cR0JYkYxF2w3wfANogT4VNwO",1492354507,535292406];</script>
+    <script src="//d2c87l0yth4zbw.global.ssl.fastly.net/build/js/bon-32c3a6a7e1.js"></script>
+    
+  
+
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create",google_tag_manager["GTM-7BJJ"].macro('gtm1'),"auto",{allowLinker:!0});ga("set","anonymizeIp",!0);ga("set","userId",google_tag_manager["GTM-7BJJ"].macro('gtm2'));ga("set","dimension3",google_tag_manager["GTM-7BJJ"].macro('gtm3'));ga("set","dimension1",google_tag_manager["GTM-7BJJ"].macro('gtm4'));
+ga("set","dimension4",google_tag_manager["GTM-7BJJ"].macro('gtm5'));ga("set","dimension7",google_tag_manager["GTM-7BJJ"].macro('gtm6'));var json=google_tag_manager["GTM-7BJJ"].macro('gtm7');if(json)try{var utm=JSON.parse(json);utm&&(utm.utm_campaign&&ga("set","campaignName",utm.utm_campaign),utm.utm_source&&ga("set","campaignSource",utm.utm_source),utm.utm_medium&&ga("set","campaignMedium",utm.utm_medium),utm.utm_content&&ga("set","campaignContent",utm.utm_content),utm.utm_term&&ga("set","campaignKeyword",utm.utm_term))}catch(a){}
+window.optimizely=window.optimizely||[];window.optimizely.push(["activateUniversalAnalytics"]);ga("require","displayfeatures");ga("require","linkid");ga("require","linker");ga("linker:autoLink",[google_tag_manager["GTM-7BJJ"].macro('gtm8')]);ga("require","GTM-P9JKJ53");ga("send","pageview");</script>
+
+<script type="text/javascript" id="">var _kiq=_kiq||[];(function(){setTimeout(function(){var a=document,b=a.getElementsByTagName("script")[0],a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src="//s3.amazonaws.com/ki.js/51746/b0R.js";b.parentNode.insertBefore(a,b)},1)})();</script><script type="text/javascript" id="" src="//d3ewslr5655zon.cloudfront.net/tags/spotify-7436afc376.min.js"></script>
+<script type="text/javascript" id="">var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"15654041"});(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src=("https:"==document.location.protocol?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=15654041&amp;cv=2.0&amp;cj=1">
+</noscript>
+<script type="text/javascript" id="">(function(){getCookie=function(){var c=window.document.cookie.split(";"),b;for(b=0;b<c.length;b+=1){for(var a=c[b];" "==a.charAt(0);)a=a.substring(1,a.length);if(0==a.indexOf("justRegistered"))return a.substring(14,a.length)}return null};var c=getCookie();c&&-1<c.indexOf(1)&&(window.dataLayer.push({event:"registration_flow_complete"}),window.document.cookie="justRegistered\x3dnull;path\x3d/;domain\x3d.spotify.com")})();</script>
+<div id="ttdUniversalPixelTag97af233fba6b42d7bdb45e25387ba301" style="display:none">
+  <script type="text/javascript" id="" src="https://js.adsrvr.org/up_loader.1.1.0.js"></script>
+  <script type="text/javascript" id="">(function(a){"function"===typeof TTDUniversalPixelApi&&(a=new TTDUniversalPixelApi,a.init("6edr100",["arf8d2q"],"https://insight.adsrvr.org/track/up","ttdUniversalPixelTag97af233fba6b42d7bdb45e25387ba301"))})(this);</script><iframe id="universal_pixel" allowtransparency="true" style="visibility:hidden;" src="https://insight.adsrvr.org/track/up?adv=6edr100&amp;ref=https%3A%2F%2Fwww.spotify.com%2Fmx%2Faccount%2Foverview%2F&amp;upid=arf8d2q&amp;osi=8d18b80103b61caa59e9ec4ad52be8ba&amp;osv=1.1&amp;upv=1.1.1" width="0" height="0"></iframe>
+</div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1483047915331997");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1483047915331997&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nvi9b");twq("track","PageView");</script>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","119490745059624");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=119490745059624&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nvo5k");twq("track","PageView");</script>
+<script type="text/javascript" id="">var scRec=document.createElement("SCRIPT");scRec.type="text/javascript";scRec.src="//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";document.getElementsByTagName("head")[0].appendChild(scRec);</script><script type="text/javascript" id="">(function(c,b,d,f,e){c[e]=c[e]||[];c[e].push({projectId:"10000",properties:{pixelId:"10018697"}});var a=b.createElement(d);a.src=f;a.async=!0;a.onload=a.onreadystatechange=function(){var b,a=this.readyState,d=c[e];if(!a||"complete"==a||"loaded"==a)try{b=YAHOO.ywa.I13N.fireBeacon,c[e]=[],c[e].push=function(a){b([a])},b(d)}catch(g){}};b=b.getElementsByTagName(d)[0];d=b.parentNode;d.insertBefore(a,b)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script><script type="text/javascript" id="">var google_conversion_id=938675917,google_custom_params=window.google_tag_params,google_remarketing_only=!0;</script>
+<script type="text/javascript" id="" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:444446,hjsv:5};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"//static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><iframe style="display: none ! important; width: 1px ! important; height: 1px ! important; opacity: 0 ! important; pointer-events: none ! important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html"></iframe>
+
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/938675917/?guid=ON&amp;script=0">
+</div>
+</noscript><script type="application/javascript" id="ywa-1492268109751-818013" class="ywa-10000" defer="" src="https://sp.analytics.yahoo.com/sp.pl?a=10000&amp;jsonp=YAHOO.ywa.I13N.handleJSONResponse&amp;d=Sat%2C%2015%20Apr%202017%2014%3A55%3A09%20GMT&amp;n=5d&amp;b=Vista%20general%20de%20la%20cuenta%20-%20Spotify&amp;.yp=10018697&amp;f=https%3A%2F%2Fwww.spotify.com%2Fmx%2Faccount%2Foverview%2F&amp;e=https%3A%2F%2Fwww.spotify.com%2Fmx%2F&amp;enc=UTF-8"></script><div id="ads"></div><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvi9b&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nvo5k&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels" type="text/javascript"></script>
