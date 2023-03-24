@@ -7,11 +7,11 @@
           </div>
        </section>
 
-<%= form_with url: travel_create_path do |form| %>
-  <%= form.hidden_field :dream_id, value: @dream.id %>
+<%= simple_form_for @dream, url: travel_create_path(@dream), method: :post do |form| %>
+  <%= form.input :dream_id, as: :hidden, input_html: { value: @dream.id } %>
   <% Travel.all.each do |travel| %>
-    <%= form.check_box :travel_ids, { multiple: true }, travel.id %>
-    <%= form.label :travel_ids, travel.city %>
+    <%= check_box_tag 'travel_ids[]', travel.id %>
+    <%= label_tag "travel_ids_#{travel.id}", travel.city %>
   <% end %>
-  <%= form.submit "Submit" %>
+  <%= form.button :submit %>
 <% end %>

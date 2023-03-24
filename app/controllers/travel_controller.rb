@@ -33,7 +33,8 @@ class TravelController < ApplicationController
     dream = Dream.find(params[:dream_id])
     travel_ids = params[:travel_ids].reject { |id| id.to_i.zero? }
     travel_ids.each do |travel_id|
-      Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id)
+      travel = Travel.find(travel_id)
+      Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id, title: travel.title)
     end
   end
   
