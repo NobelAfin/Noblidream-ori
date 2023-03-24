@@ -63,3 +63,6 @@ gem 'actionpack', '>= 7.0.4'
 gem 'public_activity'
 
 gem 'activerecord-import'
+
+# Convert images to different formats, resize them, and more
+gem 'rmagick'

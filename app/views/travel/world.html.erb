@@ -9,34 +9,43 @@
 
 <%= simple_form_for @dream, url: travel_create_path(@dream), method: :post do |form| %>
   <%= form.input :dream_id, as: :hidden, input_html: { value: @dream.id } %>
-
   <% Travel.all.group_by(&:continent).each do |continent, travels| %>
-    <div class="ui-159">
-      <div class="ui-i4">
-        <div class="ui-item">
-          <%= image_tag 'continente_europeo.png', class: 'img-responsive', size: '200x200' %>
-          <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= continent %>" aria-expanded="false" aria-controls="<%= continent %>">
-            <h6><%= continent.upcase %></h6>
-            <div class="ui-hover">
-              <div class="ui-links">
-                <i class="fa fa-check fa-3x text-white"></i>
-              </div>
+  <div class="ui-159">
+    <div class="ui-i4">
+      <div class="ui-item">
+        <%= image_tag "#{continent.downcase}.png", class: 'img-responsive', size: '200x200' %>
+        <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= continent %>" aria-expanded="false" aria-controls="<%= continent %>">
+          <h6><%= continent.upcase %></h6>
+          <div class="ui-hover">
+            <div class="ui-links">
+              <i class="fa fa-check fa-3x text-white"></i>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="collapse" id="<%= continent %>">
-        <% travels.group_by(&:country).each do |country, travels| %>
-          <h3><%= country %></h3>
-          <% travels.each do |travel| %>
-            <%= check_box_tag 'travel_ids[]', travel.id %>
-            <%= label_tag "travel_ids_#{travel.id}", travel.city %>
-          <% end %>
-        <% end %>
-      </div>
     </div>
-  <% end %>
-
+    <div class="collapse" id="<%= continent %>">
+      <% travels.group_by(&:country).each do |country, travels| %>
+        <div class="ui-i2">
+          <div class="ui-item">
+            <%= image_tag "#{country.downcase}.png", class: 'img-responsive' %>
+            <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= country %>" aria-expanded="false" aria-controls="<%= country %>">
+            <h6><%= country.upcase %></h6>
+            <% travels.each do |travel| %>
+            <div class="ui-hover">
+            <%= check_box_tag 'travel_ids[]', travel.travel_id %>
+            <%= label_tag "travel_ids_#{travel.travel_id}" do %> 
+            <%= content_tag(:i, "",class:"fa fa-check fa-3x text-white")%> 
+        <% end %>  
+      <%= link_to "VER IMAGENES", "https://www.ecosia.org/images?q=#{travel.city}", target: "_blank" %>
+    </div> 
+  <% end %> 
+</div>
+          </div> 
+        </div> 
+      <% end %>       
+    </div> 
+  </div> 
+<% end %>       
   <%= form.button :submit %>
 <% end %>

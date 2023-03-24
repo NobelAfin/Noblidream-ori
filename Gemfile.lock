@@ -144,6 +144,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.6)
+    pkg-config (1.5.1)
     psych (3.3.4)
     public_activity (2.0.2)
       actionpack (>= 5.0.0)
@@ -191,6 +192,8 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
+    rmagick (5.2.0)
+      pkg-config (~> 1.4)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -264,6 +267,7 @@ DEPENDENCIES
   public_activity
   puma
   rails (~> 7.0.3, >= 7.0.3.1)
+  rmagick
   sass-rails
   simple_form
   spring
