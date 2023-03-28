@@ -24,17 +24,12 @@
         </div>
 
 <div class="ui-159">    
-<!-- CONTINENTE EUROPEO .............................................-->
-            <!-- All -->
+<!-- CONTINENT EUROPA .............................................-->
             <div class="ui-i4">
-                <!-- Item -->
                 <div class="ui-item">
-                    <!-- Image -->
                     <%= image_tag 'continente_europeo.png', :class => 'img-responsive', :size => '200x200' %>
-                    <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#europa" aria-expanded="false" aria-controls="collapseExample">                                <!-- Heading -->
-                                <h6>EUROPA</h6>
-                                <!-- UI Content Hover -->   
+                                <h6>EUROPA</h6> 
                                 <div class="ui-hover">
                                 <div class="ui-links">
                                  <i class="fa fa-check fa-3x text-white"></i>
@@ -47,18 +42,12 @@
           <div  class="collapse" id="europa">
 
           <div class="ui-159">    
-
-            <!-- All -->
+<!-- country Reino unido.............................................-->
             <div class="ui-i2">
-                <!-- Item -->
                 <div class="ui-item">
-                    <!-- Image -->
-                    <%= image_tag 'reino_unido.png', :class => 'img-responsive'%>
-                    <!-- Hover -->
+                    <%= image_tag 'reino-unido.png', :class => 'img-responsive'%>
                       <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#reino_unido" aria-expanded="false" aria-controls="collapseExample">
-                                <!-- Heading -->
                                 <h6>Reino unido</h6>
-                                <!-- UI Content Hover -->   <!-- Links -->
                                 <div class="ui-hover">
                 <div class="ui-links">
                     <i class="fa fa-check fa-3x text-white"></i>
@@ -72,15 +61,10 @@
             <div class="collapse" id="reino_unido">
             <p>Selecciona las ciudades que deseas visitar</p>
             <div class="ui-i2">
-                <!-- Item -->
                 <div class="ui-item">
-                    <!-- Image -->
                     <%= image_tag 'escocia.png', :class => 'img-responsive'%>
-                    <!-- Hover -->
                       <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#escocia" aria-expanded="false" aria-controls="collapseExample">
-                                <!-- Heading -->
                                 <h6>ESCOCIA</h6>
-                                <!-- UI Content Hover -->   <!-- Links -->
                                 <div class="ui-hover">
                 <div class="ui-links">
                     <i class="fa fa-check fa-3x text-white"></i>
@@ -94,17 +78,12 @@
 
             <div class="collapse" id="escocia">
             <p>Selecciona las ciudades que deseas visitar</p>
-            
+            <!-- city -->
             <div class="ui-i2">
-                <!-- Item -->
                 <div class="ui-item">
-                    <!-- Image -->
                     <%= image_tag 'aberdeen.png', :class => 'img-responsive', :size => '200x200' %>
-                        <!-- Hover -->
                         <div class="ui-content ui-bg-grawhi">
-                            <!-- Heading -->
-                            <h6>ABERDEEN</h6>
-                            <!-- UI Content Hover -->   
+                            <h6>ABERDEEN</h6>  
                             <div class="ui-hover ui-image-hover">
                             <div class="ui-name" style="margin-top: 65%">
                              <h4><a href="https://www.ecosia.org/images?q=aberdeen" target="_blank">VER IMAGENES</a></h4>
@@ -23450,8 +23429,7 @@ class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
       	</div>
       </div>  
 		<script>
-			$(document).ready(function(){
-			
+			$(document).ready(function(){		
 				<!-- Select and deselect on click -->
 				$(".ui-i2 .ui-item").click(function(){
 					if($(this).parent().hasClass("active")){
@@ -23460,29 +23438,22 @@ class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
 					else{
 						$(this).parent().addClass("active");
 					}
-				});
-				
+				});	
 				<!-- Select all -->
 				$(".ui-all .all").click(function(e){
 					e.preventDefault();
 					$(".ui-i2").removeClass("active").addClass("active");
-				});
-				
+				});		
 				<!-- Select none -->
 				$(".ui-all .none").click(function(e){
 					e.preventDefault();
 					$(".ui-i2").removeClass("active");
 				});
-
-				
 			});
-
 		</script>
-
 
         <script>
             $(document).ready(function(){
-            
                 <!-- Select and deselect on click -->
                 $(".ui-i2 .ui-item2").click(function(){
                     if($(this).parent().hasClass("active")){
@@ -23492,33 +23463,25 @@ class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
                         $(this).parent().addClass("active");
                     }
                 });
-                
                 <!-- Select all -->
                 $(".ui-all .all").click(function(e){
                     e.preventDefault();
                     $(".ui-i2").removeClass("active").addClass("active");
                 });
-                
                 <!-- Select none -->
                 $(".ui-all .none").click(function(e){
                     e.preventDefault();
                     $(".ui-i2").removeClass("active");
                 });
-
-                
             });
-
         </script>
 
         <script>
             $(document).ready(function(){
-            
                 <!-- Select and deselect on click -->
                 $('.ui-item').click(function() {
                 var travelId = $(this).data('travel-id');
-                 // ...
                  });
-
                  $('.ui-item').click(function() {
                 var travelId = $(this).data('travel-id');
                  $.ajax({
@@ -23554,10 +23517,7 @@ class: "btn btn-solid2 js-goto-signup js-button-hero-get-free" %>
                     e.preventDefault();
                     $(".ui-i4").removeClass("active");
                 });
-
-                
             });
-
         </script>
 
 

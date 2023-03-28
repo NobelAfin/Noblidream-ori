@@ -138,6 +138,7 @@ Rails.application.routes.draw do
   get 'travel/america'
   get 'travel/africa'
   get 'travel/oceania'
+  get 'travel/prueba'
   get 'travel/world/:dream_id', to: 'travel#world', as: :travel_world
   post 'travel/world/:dream_id', to: 'travel#create', as: :travel_create
 

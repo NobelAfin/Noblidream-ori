@@ -1,6 +1,5 @@
 class TravelController < ApplicationController
   def europe
-    @aberdeen = City.where(travel_id: 1)
   end
 
   def steps_travel
@@ -29,12 +28,16 @@ class TravelController < ApplicationController
   end
   
   def create
-    puts "Parámetros recibidos: #{params.inspect}"
     dream = Dream.find(params[:dream_id])
     travel_ids = params[:travel_ids].reject { |id| id.to_i.zero? }
     travel_ids.each do |travel_id|
       travel = Travel.find(travel_id)
-      Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id, title: travel.title)
+      goal = Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id, title: travel.title)
+      if goal.persisted?
+        flash[:success] = "Meta creada correctamente"
+      else
+        flash[:error] = "Error al crear la meta"
+      end
     end
   end
   

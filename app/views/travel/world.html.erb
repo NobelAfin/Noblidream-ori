@@ -2,10 +2,10 @@
        <div>
         <h2 class="nblue animated animatedFadeInUp hsdreamfs">
                         VIAJAR POR EL MUNDO
-          </h2>
+        </h2>
           <p>INDICACIONES: A viajar a Oceania, pero antes te explicaremos el llenado de tu sueño. Para poder ayudarte correctamente en tu sueño hemos creado un muy completo y simple llenado compuesto de 2 secciones. Solo llena lo que se te pide a continuacion.</p>
-          </div>
-       </section>
+       </div>
+</section>
 
 <%= simple_form_for @dream, url: travel_create_path(@dream), method: :post do |form| %>
   <%= form.input :dream_id, as: :hidden, input_html: { value: @dream.id } %>
@@ -20,7 +20,7 @@
           <% elsif File.exist?("#{Rails.root}/app/assets/images/#{continent.downcase}.gif") %>
             <%= image_tag "#{continent.downcase}.gif", class: 'img-responsive', size: '200x200' %>
           <% else %>
-            <%= image_tag "noimage.png", class: 'img-responsive', size: '200x200' %>
+            <%= image_tag "noimag.png", class: 'img-responsive', size: '200x200' %>
             <%= logger.info "No image found for #{continent.downcase}" %>
           <% end %>
           <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= continent %>" aria-expanded="false" aria-controls="<%= continent %>">
@@ -46,16 +46,23 @@
               <% else %>
                 <%= logger.info "Image does not exist" %>
               <% end %>
-              <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= country %>" aria-expanded="false" aria-controls="<%= country %>">
+              <div class="ui-content ui-bg-grawhi country-collapse-button" role="button" data-toggle="collapse" href="#<%= country.parameterize %>" aria-expanded="false" aria-controls="<%= country.parameterize %>">
                 <h6><%= country.upcase %></h6>
-                <% travels.each do |travel| %>
-                  <div class="ui-hover">
-                    <%= check_box_tag 'travel_ids[]', travel.travel_id %>
-                    <%= label_tag "travel_ids_#{travel.travel_id}" do %> 
-                      <%= content_tag(:i, "",class:"fa fa-check fa-3x text-white")%> 
-                    <% end %>  
-                    <%= link_to "VER IMAGENES", "https://www.ecosia.org/images?q=#{travel.city}", target: "_blank" %>
-                  </div> 
+                <% travels.group_by(&:city).each do |city, travels| %>
+                  <div class="ui-i2 city">
+                    <div class="ui-item">
+                    <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= city.parameterize %>" aria-expanded="false" aria-controls="<%= city.parameterize %>">
+                    <h6><%= city.upcase %></h6>
+                      <div class="collapse" id="<%= city.parameterize %>">
+                    <select name="city">
+                      <% travels.each do |travel| %>
+                      <option value="<%= travel.id %>"><%= travel.title %> - <%= travel.city %></option>
+                      <% end %>
+                    </select>
+                    </div>
+                    </div>
+                  </div>
+                 </div> 
                 <% end %> 
               </div>
             </div> 
@@ -66,3 +73,50 @@
   <% end %>       
   <%= form.button :submit %>
 <% end %>
+
+<script>
+			$(document).ready(function(){		
+				//  Select and deselect on click 
+				$(".ui-i2 .ui-item").click(function(){
+         if($(this).hasClass("selected")){
+          $(this).removeClass("selected");
+          }
+          else{
+            $(this).addClass("selected");
+          }
+        });			
+				//  Select all 
+				$(".ui-all .all").click(function(e){
+					e.preventDefault();
+					$(".ui-i2").removeClass("active").addClass("active");
+				});			
+				//  Select none 
+				$(".ui-all .none").click(function(e){
+					e.preventDefault();
+					$(".ui-i2").removeClass("active");
+				});			
+			});
+		</script>
+
+<script>
+  //$(document).ready(function() {
+    // Cuando se hace clic en un elemento que tenga el atributo data-toggle="collapse"
+    //$('[data-toggle="collapse"]').click(function() {
+      // Obtener el href del atributo
+      //var target = $(this).attr('href');
+
+      // Expande o colapsa el contenido correspondiente utilizando el método .collapse de Bootstrap
+      //$(target).collapse('toggle');
+    //});
+  //});
+//</script>
+
+<script>
+$(document).ready(function() {
+  // Agrega un controlador de eventos de clic a los botones de colapso de "country"
+  $(".country-collapse-button").click(function() {
+    // Encuentra el elemento "city" correspondiente y muéstralo/ocúltalo
+    $(this).closest(".country").find(".city").toggle();
+  });
+});
+</script>  
