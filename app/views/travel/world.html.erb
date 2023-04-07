@@ -1,3 +1,5 @@
+<script src="https://kit.fontawesome.com/916442ede6.js" crossorigin="anonymous"></script>
+
 <section class="altura">
        <div>
         <h2 class="nblue animated animatedFadeInUp hsdreamfs">
@@ -47,26 +49,45 @@
                 <%= logger.info "Image does not exist" %>
               <% end %>
               <div class="ui-content ui-bg-grawhi country-collapse-button" role="button" data-toggle="collapse" href="#<%= country.parameterize %>" aria-expanded="false" aria-controls="<%= country.parameterize %>">
-                <h6><%= country.upcase %></h6>
-                <% travels.group_by(&:city).each do |city, travels| %>
-                  <div class="ui-i2 city">
-                    <div class="ui-item">
-                    <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= city.parameterize %>" aria-expanded="false" aria-controls="<%= city.parameterize %>">
-                    <h6><%= city.upcase %></h6>
-                      <div class="collapse" id="<%= city.parameterize %>">
+                <h6 class="fit-text"><%= country.upcase %></h6> 
+              </div>
+            </div> 
+          </div> 
+          <div class="collapse" id="<%= country.parameterize %>">
+          <% travels.group_by(&:city).each do |city, travels| %>
+            <div class="ui-i2 city">
+              <div class="ui-item">
+              <% if File.exist?("#{Rails.root}/app/assets/images/#{city.downcase}.png") %>
+                <%= image_tag "#{city.downcase}.png", class: 'img-responsive' %>
+              <% elsif File.exist?("#{Rails.root}/app/assets/images/#{city.downcase}.jpg") %>
+                <%= image_tag "#{city.downcase}.jpg", class: 'img-responsive' %>
+              <% elsif File.exist?("#{Rails.root}/app/assets/images/#{city.downcase}.gif") %>
+                <%= image_tag "#{city.downcase}.gif", class: 'img-responsive' %>
+              <% else %>
+                <%= logger.info "Image does not exist" %>
+              <% end %>
+                <div class="ui-content ui-bg-grawhi" role="button" data-toggle="collapse" href="#<%= city.parameterize %>" aria-expanded="false" aria-controls="<%= city.parameterize %>">
+                <div class="ui-hover ui-image-hover">
+                        <div class="ui-name" style="margin-top: 65%">
+                          <h4><%= link_to "VER IMAGENES", "https://www.ecosia.org/images?q=#{city} #{country}", target: "_blank" %></h4>
+                        </div>
+                        <div class="ui-links">
+                        <i class="fa fa-check fa-3x text-white"></i>
+                        </div>
+                    </div>
+                <h6 class="fit-text"><%= city.upcase %></h6>
+                  <div class="collapse" id="<%= city.parameterize %>">
                     <select name="city">
                       <% travels.each do |travel| %>
                       <option value="<%= travel.id %>"><%= travel.title %> - <%= travel.city %></option>
                       <% end %>
                     </select>
-                    </div>
+                      </div>
                     </div>
                   </div>
-                 </div> 
-                <% end %> 
-              </div>
-            </div> 
-          </div> 
+                </div> 
+                <% end %>
+            </div>
         <% end %>       
       </div> 
     </div> 
@@ -98,6 +119,12 @@
 			});
 		</script>
 
+    <script>
+      $('.cumplir-sueno1').click(function() {
+
+      })
+      </script>
+
 <script>
   //$(document).ready(function() {
     // Cuando se hace clic en un elemento que tenga el atributo data-toggle="collapse"
@@ -114,7 +141,7 @@
 <script>
 $(document).ready(function() {
   // Agrega un controlador de eventos de clic a los botones de colapso de "country"
-  $(".country-collapse-button").click(function() {
+  $(".country-collapse-button").click(function(e) {
     // Encuentra el elemento "city" correspondiente y muéstralo/ocúltalo
     $(this).closest(".country").find(".city").toggle();
   });

@@ -496,18 +496,6 @@ p,.jumbotron p {
 	-moz-backface-visibility:hidden;
 	backface-visibility:hidden
 }
-.bg-main-registration {
-	width:100%;
-	height:100%;   
-	background:url(../i/home/noise.png),linear-gradient(50deg,#f9f9f9 0,#3eaef6 100%);
-	left:0;
-	position:fixed;
-	top:0;
-	z-index:-1;
-	-webkit-backface-visibility:hidden;
-	-moz-backface-visibility:hidden;
-	backface-visibility:hidden
-}
 .bg-main-travel {
 	width:100%;
 	height:100%;   
@@ -535,7 +523,7 @@ p,.jumbotron p {
 .bg-main-health {
 	width:100%;
 	height:100%;   
-	background:url(salud_portada3.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(salud-portada3.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -547,7 +535,7 @@ p,.jumbotron p {
 .bg-main-house {
 	width:100%;
 	height:100%;   
-	background:url(casa_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(casa-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -559,7 +547,7 @@ p,.jumbotron p {
 .bg-main-coding-skill {
 	width:100%;
 	height:100%;   
-	background:url(aprender-programar_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(aprender-programar-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -572,7 +560,7 @@ p,.jumbotron p {
 .bg-main-love {
 	width:100%;
 	height:100%;   
-	background:url(amor_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(amor-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -584,7 +572,7 @@ p,.jumbotron p {
 .bg-main-friends {
 	width:100%;
 	height:100%;   
-	background:url(amistad_portada1.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(amistad-portada1.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -596,7 +584,7 @@ p,.jumbotron p {
 .bg-main-buy-house {
 	width:100%;
 	height:100%;   
-	background:url(comprar_casa_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(comprar-casa-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -608,7 +596,7 @@ p,.jumbotron p {
 .bg-main-gamer {
 	width:100%;
 	height:100%;   
-	background:url(gamer_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(gamer-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -621,7 +609,7 @@ p,.jumbotron p {
 .bg-main-software-entrepeneur {
 	width:100%;
 	height:100%;   
-	background:url(portada_emprendimiento_software.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(portada-emprendimiento-software.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -660,7 +648,7 @@ p,.jumbotron p {
 .bg-main-car {
 	width:100%;
 	height:100%;   
-	background:url(vehiculos_portada3.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(vehiculos-portada3.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -710,7 +698,7 @@ p,.jumbotron p {
 .bg-main-buy-new-car {
 	width:100%;
 	height:100%;   
-	background:url(comprar_auto_nuevo_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(comprar-auto-nuevo-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -723,7 +711,7 @@ p,.jumbotron p {
 .bg-main-combustibles {
 	width:100%;
 	height:100%;   
-	background:url(gasolina_portada1.png),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(gasolina-portada1.png),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -736,7 +724,7 @@ p,.jumbotron p {
 .bg-main-habilidad {
 	width:100%;
 	height:100%;   
-	background:url(habilidad_portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
+	background:url(habilidad-portada.jpg),linear-gradient(50deg,#180d7e 0,#38adf8 100%);
 	left:0;
 	position:fixed;
 	top:0;
@@ -1174,3 +1162,10 @@ p,.jumbotron p {
 		float:left!important
 	}
 }
+
+.fit-text {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 150px;
+  }

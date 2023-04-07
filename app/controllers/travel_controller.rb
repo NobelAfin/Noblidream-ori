@@ -29,15 +29,19 @@ class TravelController < ApplicationController
   
   def create
     dream = Dream.find(params[:dream_id])
-    travel_ids = params[:travel_ids].reject { |id| id.to_i.zero? }
-    travel_ids.each do |travel_id|
-      travel = Travel.find(travel_id)
-      goal = Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id, title: travel.title)
-      if goal.persisted?
-        flash[:success] = "Meta creada correctamente"
-      else
-        flash[:error] = "Error al crear la meta"
+    if params[:travel_ids].present?
+      travel_ids = params[:travel_ids].reject { |id| id.to_i.zero? }
+      travel_ids.each do |travel_id|
+        travel = Travel.find(travel_id)
+        goal = Goal.create(dream_id: dream.id, travel_id: travel_id, user_id: current_user.id, title: travel.title)
+        if goal.persisted?
+          flash[:success] = "Meta creada correctamente"
+        else
+          flash[:error] = "Error al crear la meta"
+        end
       end
+    else
+      flash[:error] = "Error al crear la meta"
     end
   end
   
