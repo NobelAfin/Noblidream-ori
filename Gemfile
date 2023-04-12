@@ -64,5 +64,5 @@ gem 'public_activity'
 
 gem 'activerecord-import'
 
-# Convert images to different formats, resize them, and more
-gem 'rmagick'
+#debugger
+gem 'pry-rails', :group => :development

@@ -28,6 +28,7 @@ class TravelController < ApplicationController
   end
   
   def create
+    puts "PARAMS: #{params.to_json}"
     dream = Dream.find(params[:dream_id])
     if params[:travel_ids].present?
       travel_ids = params[:travel_ids].reject { |id| id.to_i.zero? }
